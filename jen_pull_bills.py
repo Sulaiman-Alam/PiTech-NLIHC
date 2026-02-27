@@ -6,7 +6,8 @@ import os
 # CONFIG
 # ==========================
 
-API_KEY = os.getenv("LEGI_API_KEY")
+# Make this a separate config file or environment variable in production for security
+API_KEY = "aa506fd9cd8b7234dc9e9a31ee4724a9"
 STATE = "TX"  # Change to any state (CA, NY, FL, etc.)
 
 if not API_KEY:
