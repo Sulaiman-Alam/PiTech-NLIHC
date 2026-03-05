@@ -2,20 +2,26 @@ import requests
 import pandas as pd
 import os
 
-# Pulls all bills from a state's active legislative session using the LegiScan API and exports to CSV. 
-# Does not filter by keywords
+# Builds upon the original jen_pull_bills.py by adding keyword filtering functionality.
 
 # ==========================
 # CONFIG
 # ==========================
 
-# Make this a separate config file or environment variable in production for security
-API_KEY = "aa506fd9cd8b7234dc9e9a31ee4724a9"
-STATE = "TX"  # Change to any state (CA, NY, FL, etc.)
+API_KEY = "aa506fd9cd8b7234dc9e9a31ee4724a9"  # Add your LegiScan API key here
 
 if not API_KEY:
     print("Error: LEGI_API_KEY not set.")
     exit()
+
+# Ask user for state
+STATE = input("Enter state abbreviation (TX, CA, NY, etc.): ").upper()
+
+# Ask user for keywords
+keyword_input = input("Enter keywords to filter bills (comma separated): ")
+
+# Convert keywords into a list and make lowercase
+KEYWORDS = [k.strip().lower() for k in keyword_input.split(",") if k.strip()]
 
 # ==========================
 # STEP 1: Get Active Session
@@ -60,10 +66,25 @@ if master_data.get("status") != "OK":
 bills = []
 
 for key, bill in master_data["masterlist"].items():
-    if key != "session":
+
+    if key == "session":
+        continue
+
+    # Combine searchable fields
+    title = str(bill.get("title", "")).lower()
+    description = str(bill.get("description", "")).lower()
+
+    searchable_text = title + " " + description
+
+    # If no keywords were provided, include all bills
+    if not KEYWORDS:
         bills.append(bill)
 
-print(f"Total bills retrieved: {len(bills)}")
+    # Otherwise filter by keywords
+    elif any(keyword in searchable_text for keyword in KEYWORDS):
+        bills.append(bill)
+
+print(f"Total bills retrieved after filtering: {len(bills)}")
 
 # ==========================
 # STEP 3: Export CSV
@@ -71,7 +92,7 @@ print(f"Total bills retrieved: {len(bills)}")
 
 df = pd.DataFrame(bills)
 
-filename = f"{STATE}_bills.csv"
+filename = f"{STATE}_filtered_bills.csv"
 df.to_csv(filename, index=False)
 
 print(f"Export complete! File saved as {filename}")
