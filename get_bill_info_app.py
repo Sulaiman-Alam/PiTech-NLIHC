@@ -113,23 +113,59 @@ if st.session_state.bills:
 # ==========================
 # Download Selected Bills
 # ==========================
-
 if selected_labels:
     if st.button("Download Selected Bill Information"):
-        all_bill_data = []
+
+        rows = []
 
         for label in selected_labels:
-            bill_id = bill_options[label]
-            bill_info = get_bill_details(bill_id)
-            df = pd.json_normalize(bill_info)
-            all_bill_data.append(df)
 
-        final_df = pd.concat(all_bill_data, ignore_index=True)
-        csv = final_df.to_csv(index=False).encode("utf-8")
+            bill_id = bill_options[label]
+
+            bill_info = get_bill_details(bill_id)
+
+            rows.append({
+                "bill_id": bill_info.get("bill_id"),
+                "bill_number": bill_info.get("bill_number"),
+                "title": bill_info.get("title"),
+                "description": bill_info.get("description"),
+                "status": bill_info.get("status"),
+                "status_date": bill_info.get("status_date"),
+                "introduced_date": bill_info.get("introduced_date"),
+                "last_action": bill_info.get("last_action"),
+                "last_action_date": bill_info.get("last_action_date"),
+                "url": bill_info.get("url"),
+                "state": bill_info.get("state")
+            })
+
+        df = pd.DataFrame(rows)
+
+        csv = df.to_csv(index=False).encode("utf-8")
 
         st.download_button(
-            label="Download CSV",
+            label="Download Bill Information CSV",
             data=csv,
             file_name="selected_bill_details.csv",
             mime="text/csv"
         )
+
+#if selected_labels:
+    #if st.button("Download Selected Bill Information"):
+        #all_bill_data = []
+
+        #for label in selected_labels:
+            #bill_id = bill_options[label]
+            #bill_info = get_bill_details(bill_id)
+            #df = pd.json_normalize(bill_info)
+            #all_bill_data.append(df)
+
+        #final_df = pd.concat(all_bill_data, ignore_index=True)
+        #csv = final_df.to_csv(index=False).encode("utf-8")
+
+        #st.download_button(
+            #label="Download CSV",
+            #data=csv,
+            #file_name="selected_bill_details.csv",
+            #mime="text/csv"
+        #)
+
