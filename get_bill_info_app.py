@@ -149,23 +149,3 @@ if selected_labels:
             mime="text/csv"
         )
 
-#if selected_labels:
-    #if st.button("Download Selected Bill Information"):
-        #all_bill_data = []
-
-        #for label in selected_labels:
-            #bill_id = bill_options[label]
-            #bill_info = get_bill_details(bill_id)
-            #df = pd.json_normalize(bill_info)
-            #all_bill_data.append(df)
-
-        #final_df = pd.concat(all_bill_data, ignore_index=True)
-        #csv = final_df.to_csv(index=False).encode("utf-8")
-
-        #st.download_button(
-            #label="Download CSV",
-            #data=csv,
-            #file_name="selected_bill_details.csv",
-            #mime="text/csv"
-        #)
-
