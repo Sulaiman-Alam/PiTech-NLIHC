@@ -1,0 +1,1623 @@
+import streamlit as st
+import requests
+import pandas as pd
+import re
+import base64
+from io import BytesIO
+
+try:
+    from pypdf import PdfReader
+except ImportError:
+    PdfReader = None
+
+st.set_page_config(layout="wide")
+
+st.image("nlihc_logo.svg", width=220)
+st.markdown("## Legislative Bill Screener")
+
+API_KEY = "aa506fd9cd8b7234dc9e9a31ee4724a9"
+
+JURISDICTION_OPTIONS = {
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming",
+    "DC": "Washington, D.C.",
+    "US": "U.S. Congress",
+}
+
+ALL_JURISDICTION_CODES = list(JURISDICTION_OPTIONS.keys())
+
+JURISDICTION_GROUPS = {
+    "Northeast": {
+        "New England": ["CT", "ME", "MA", "NH", "RI", "VT"],
+        "Middle Atlantic": ["NJ", "NY", "PA"],
+    },
+    "Midwest": {
+        "East North Central": ["IL", "IN", "MI", "OH", "WI"],
+        "West North Central": ["IA", "KS", "MN", "MO", "NE", "ND", "SD"],
+    },
+    "South": {
+        "South Atlantic": ["DE", "FL", "GA", "MD", "NC", "SC", "VA", "WV"],
+        "East South Central": ["AL", "KY", "MS", "TN"],
+        "West South Central": ["AR", "LA", "OK", "TX"],
+    },
+    "West": {
+        "Mountain": ["AZ", "CO", "ID", "MT", "NV", "NM", "UT", "WY"],
+        "Pacific": ["AK", "CA", "HI", "OR", "WA"],
+    },
+    "Federal / D.C.": {
+        "Federal / D.C.": ["US", "DC"],
+    },
+}
+
+BILL_STATUS_OPTIONS = {
+    1: "Introduced",
+    2: "Engrossed",
+    3: "Enrolled",
+    4: "Passed",
+    5: "Vetoed",
+    6: "Failed",
+}
+
+STATUS_SORT_PRIORITY = {
+    "Passed": 1,
+    "Enrolled": 2,
+    "Engrossed": 3,
+    "Introduced": 4,
+    "Failed": 5,
+    "Vetoed": 6,
+}
+
+SORT_OPTIONS = [
+    "Original order",
+    "Status",
+    "Bill number",
+    "Title A–Z",
+]
+
+RESULTS_PER_PAGE_OPTIONS = [10, 25, 50]
+
+LAYER_1_KEYWORD_CATEGORIES = {
+    "Broad housing topics": [
+        "housing",
+        "tenant",
+        "renter",
+        "landlord",
+        "residential",
+        "eviction",
+        "rent",
+        "rental",
+        "discrimination",
+    ]
+}
+
+LAYER_2_KEYWORD_CATEGORIES = {
+    "Eviction process": [
+        "notice",
+        "rental assistance",
+        "mediation",
+        "legal aid",
+        "record sealing",
+        "evict",
+        "unlawful detainer",
+    ],
+    "Tenant rights and retaliation": [
+        "retaliation",
+        "tenant rights",
+        "habitability",
+        "code enforcement",
+    ],
+    "Fees, deposits, and screening": [
+        "security deposit",
+        "fees",
+        "screening",
+        "credit reporting",
+    ],
+    "Voucher and fair housing": [
+        "source of income",
+        "voucher",
+        "fair housing",
+    ],
+    "Rent regulation": [
+        "just cause",
+        "rent control",
+        "rent stabilization",
+        "rent increase",
+    ],
+}
+
+LAYER_3_KEYWORD_CATEGORIES = {
+    "Eviction details": [
+        "nonpayment",
+        "notice to quit",
+        "eviction record",
+        "court eviction",
+        "emergency rental assistance",
+    ],
+    "Tenant protections": [
+        "tenant union",
+        "code violation",
+        "anti harassment",
+        "unsafe housing",
+        "habitable",
+    ],
+    "Fees and deposits details": [
+        "application fee",
+        "screening fee",
+        "rent reporting",
+        "deposit limit",
+    ],
+    "Voucher and discrimination details": [
+        "housing choice voucher",
+        "section 8",
+        "lawful source of income",
+    ],
+    "Rent regulation details": [
+        "no fault eviction",
+        "rent cap",
+        "just cause eviction",
+    ],
+}
+
+defaults = {
+    "bills": [],
+    "base_results": [],
+    "second_layer_results": [],
+    "third_layer_results": [],
+    "status_filtered_results": [],
+    "first_filter_text": "",
+    "second_filter_text": "",
+    "third_filter_text": "",
+    "jurisdiction_text": "",
+    "all_jurisdictions_mode": False,
+    "selected_status_labels": [],
+    "open_layer1_category": None,
+    "open_layer2_category": None,
+    "open_layer3_category": None,
+    "open_focus_outer": False,
+    "open_precision_outer": False,
+    "open_jurisdiction_expander": False,
+    "general_search_ran": False,
+    "focus_search_ran": False,
+    "precision_search_ran": False,
+    "status_filter_ran": False,
+    "api_total_calls": 0,
+    "api_calls_session_lookup": 0,
+    "api_calls_bill_list_lookup": 0,
+    "api_calls_bill_details_lookup": 0,
+    "api_calls_bill_text_lookup": 0,
+    "display_sort_option": "Original order",
+    "display_results_per_page": 25,
+    "display_current_page": 1,
+    "cart_sort_option": "Original order",
+    "cart_results_per_page": 10,
+    "cart_current_page": 1,
+    "prepared_export_data": None,
+    "prepared_export_count": 0,
+    "results_displayed_expanded": False,
+    "results_cart_expanded": False,
+    "ui_message_type": "",
+    "ui_message_text": "",
+}
+
+for key, value in defaults.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
+
+
+def parse_keywords(text):
+    return [k.strip().lower() for k in text.split(",") if k.strip()]
+
+
+def normalize_keywords_for_display(keywords):
+    seen = set()
+    ordered = []
+    for k in keywords:
+        cleaned = k.strip()
+        lowered = cleaned.lower()
+        if cleaned and lowered not in seen:
+            seen.add(lowered)
+            ordered.append(cleaned)
+    return ordered
+
+
+def format_filter_value(value_list):
+    if not value_list:
+        return "Not applied"
+    return ", ".join(value_list)
+
+
+def increment_api_counter(counter_key):
+    st.session_state.api_total_calls += 1
+    st.session_state[counter_key] += 1
+
+
+def reset_display_pagination():
+    st.session_state["display_current_page"] = 1
+
+
+def reset_cart_pagination():
+    st.session_state["cart_current_page"] = 1
+
+
+def reset_all_pagination():
+    reset_display_pagination()
+    reset_cart_pagination()
+
+
+def parse_jurisdiction_input(text):
+    if not text:
+        return []
+
+    raw_parts = [p.strip() for p in text.split(",") if p.strip()]
+    name_to_code = {name.lower(): code for code, name in JURISDICTION_OPTIONS.items()}
+    extra_aliases = {
+        "washington dc": "DC",
+        "washington, dc": "DC",
+        "district of columbia": "DC",
+        "u.s. congress": "US",
+        "us congress": "US",
+        "congress": "US",
+        "united states": "US",
+    }
+
+    selected_codes = []
+    seen = set()
+
+    for part in raw_parts:
+        normalized = part.strip().upper()
+        lowered = part.strip().lower()
+
+        code = None
+        if normalized in JURISDICTION_OPTIONS:
+            code = normalized
+        elif lowered in name_to_code:
+            code = name_to_code[lowered]
+        elif lowered in extra_aliases:
+            code = extra_aliases[lowered]
+
+        if code and code not in seen:
+            selected_codes.append(code)
+            seen.add(code)
+
+    return selected_codes
+
+
+def get_active_jurisdictions():
+    if st.session_state.get("all_jurisdictions_mode", False):
+        return ALL_JURISDICTION_CODES
+    return parse_jurisdiction_input(st.session_state.get("jurisdiction_text", ""))
+
+
+def toggle_jurisdiction(code):
+    st.session_state["all_jurisdictions_mode"] = False
+    current_codes = parse_jurisdiction_input(st.session_state.get("jurisdiction_text", ""))
+
+    if code in current_codes:
+        updated_codes = [c for c in current_codes if c != code]
+    else:
+        updated_codes = current_codes + [code]
+
+    st.session_state["jurisdiction_text"] = ", ".join(updated_codes)
+    st.session_state["open_jurisdiction_expander"] = True
+
+
+def add_jurisdiction_group(codes):
+    st.session_state["all_jurisdictions_mode"] = False
+    current_codes = parse_jurisdiction_input(st.session_state.get("jurisdiction_text", ""))
+    updated_codes = list(current_codes)
+
+    for code in codes:
+        if code not in updated_codes:
+            updated_codes.append(code)
+
+    st.session_state["jurisdiction_text"] = ", ".join(updated_codes)
+    st.session_state["open_jurisdiction_expander"] = True
+
+
+def remove_jurisdiction_group(codes):
+    st.session_state["all_jurisdictions_mode"] = False
+    current_codes = parse_jurisdiction_input(st.session_state.get("jurisdiction_text", ""))
+    updated_codes = [code for code in current_codes if code not in codes]
+    st.session_state["jurisdiction_text"] = ", ".join(updated_codes)
+    st.session_state["open_jurisdiction_expander"] = True
+
+
+def clear_all_selected_jurisdictions():
+    st.session_state["all_jurisdictions_mode"] = False
+    st.session_state["jurisdiction_text"] = ""
+    st.session_state["open_jurisdiction_expander"] = True
+
+
+def activate_all_jurisdictions_mode():
+    st.session_state["all_jurisdictions_mode"] = True
+    st.session_state["jurisdiction_text"] = ""
+    st.session_state["open_jurisdiction_expander"] = False
+
+
+def clear_filters_and_results():
+    st.session_state["first_filter_text"] = ""
+    st.session_state["second_filter_text"] = ""
+    st.session_state["third_filter_text"] = ""
+    st.session_state["jurisdiction_text"] = ""
+    st.session_state["all_jurisdictions_mode"] = False
+    st.session_state["selected_status_labels"] = []
+
+    st.session_state["display_sort_option"] = "Original order"
+    st.session_state["display_results_per_page"] = 25
+    st.session_state["display_current_page"] = 1
+
+    st.session_state["cart_sort_option"] = "Original order"
+    st.session_state["cart_results_per_page"] = 10
+    st.session_state["cart_current_page"] = 1
+
+    st.session_state["prepared_export_data"] = None
+    st.session_state["prepared_export_count"] = 0
+
+    st.session_state["bills"] = []
+    st.session_state["base_results"] = []
+    st.session_state["second_layer_results"] = []
+    st.session_state["third_layer_results"] = []
+    st.session_state["status_filtered_results"] = []
+
+    st.session_state["open_layer1_category"] = None
+    st.session_state["open_layer2_category"] = None
+    st.session_state["open_layer3_category"] = None
+    st.session_state["open_focus_outer"] = False
+    st.session_state["open_precision_outer"] = False
+    st.session_state["open_jurisdiction_expander"] = False
+
+    st.session_state["general_search_ran"] = False
+    st.session_state["focus_search_ran"] = False
+    st.session_state["precision_search_ran"] = False
+    st.session_state["status_filter_ran"] = False
+
+    st.session_state["results_displayed_expanded"] = False
+    st.session_state["results_cart_expanded"] = False
+    st.session_state["ui_message_type"] = ""
+    st.session_state["ui_message_text"] = ""
+
+    keys_to_remove = [
+        key for key in list(st.session_state.keys())
+        if key.startswith("select_bill_widget_")
+        or key.startswith("selected_bill_")
+        or key.startswith("show_bill_text_")
+        or key.startswith("bill_text_viewer_")
+    ]
+    for key in keys_to_remove:
+        del st.session_state[key]
+
+
+def clear_selected_bills():
+    keys_to_remove = [
+        key for key in list(st.session_state.keys())
+        if key.startswith("select_bill_widget_") or key.startswith("selected_bill_")
+    ]
+    for key in keys_to_remove:
+        del st.session_state[key]
+
+    st.session_state["prepared_export_data"] = None
+    st.session_state["prepared_export_count"] = 0
+    st.session_state["results_cart_expanded"] = True
+
+
+def go_previous_display_page():
+    if st.session_state.display_current_page > 1:
+        st.session_state.display_current_page -= 1
+    st.session_state["results_displayed_expanded"] = True
+
+
+def go_next_display_page(total_pages):
+    if st.session_state.display_current_page < total_pages:
+        st.session_state.display_current_page += 1
+    st.session_state["results_displayed_expanded"] = True
+
+
+def go_previous_cart_page():
+    if st.session_state.cart_current_page > 1:
+        st.session_state.cart_current_page -= 1
+    st.session_state["results_cart_expanded"] = True
+
+
+def go_next_cart_page(total_pages):
+    if st.session_state.cart_current_page < total_pages:
+        st.session_state.cart_current_page += 1
+    st.session_state["results_cart_expanded"] = True
+
+
+def toggle_first_filter_keyword(phrase, category):
+    existing_display = normalize_keywords_for_display(
+        [k.strip() for k in st.session_state.first_filter_text.split(",") if k.strip()]
+    )
+    existing_lower = [k.lower() for k in existing_display]
+
+    if phrase.lower() in existing_lower:
+        updated = [k for k in existing_display if k.lower() != phrase.lower()]
+    else:
+        updated = existing_display + [phrase]
+
+    st.session_state.first_filter_text = ", ".join(updated)
+    st.session_state.open_layer1_category = category
+
+
+def toggle_second_filter_keyword(phrase, category):
+    existing_display = normalize_keywords_for_display(
+        [k.strip() for k in st.session_state.second_filter_text.split(",") if k.strip()]
+    )
+    existing_lower = [k.lower() for k in existing_display]
+
+    if phrase.lower() in existing_lower:
+        updated = [k for k in existing_display if k.lower() != phrase.lower()]
+    else:
+        updated = existing_display + [phrase]
+
+    st.session_state.second_filter_text = ", ".join(updated)
+    st.session_state.open_layer2_category = category
+    st.session_state.open_focus_outer = True
+
+
+def toggle_third_filter_keyword(phrase, category):
+    existing_display = normalize_keywords_for_display(
+        [k.strip() for k in st.session_state.third_filter_text.split(",") if k.strip()]
+    )
+    existing_lower = [k.lower() for k in existing_display]
+
+    if phrase.lower() in existing_lower:
+        updated = [k for k in existing_display if k.lower() != phrase.lower()]
+    else:
+        updated = existing_display + [phrase]
+
+    st.session_state.third_filter_text = ", ".join(updated)
+    st.session_state.open_layer3_category = category
+    st.session_state.open_precision_outer = True
+
+
+def get_category_selection_status(phrases, selected_text):
+    selected_keywords = parse_keywords(selected_text)
+    selected_count = sum(1 for phrase in phrases if phrase.lower() in selected_keywords)
+    total_count = len(phrases)
+    return selected_count, total_count
+
+
+def apply_status_filter(bills, selected_status_labels):
+    if not selected_status_labels:
+        return bills
+
+    allowed_status_codes = {
+        code for code, label in BILL_STATUS_OPTIONS.items()
+        if label in selected_status_labels
+    }
+
+    return [bill for bill in bills if bill.get("status") in allowed_status_codes]
+
+
+def highlight_keywords(text, keywords):
+    if not text:
+        return "No text available."
+
+    highlighted_text = text
+    for keyword in keywords:
+        if keyword:
+            pattern = re.compile(re.escape(keyword), re.IGNORECASE)
+            highlighted_text = pattern.sub(
+                lambda match: (
+                    f"<span style='background-color: #fff176; "
+                    f"font-weight: 700; padding: 0 3px; border-radius: 3px;'>"
+                    f"{match.group(0)}</span>"
+                ),
+                highlighted_text
+            )
+    return highlighted_text
+
+
+def shorten_text(text, max_len=85):
+    if not text:
+        return ""
+    text = str(text).strip()
+    if len(text) <= max_len:
+        return text
+    shortened = text[:max_len].rsplit(" ", 1)[0]
+    if not shortened:
+        shortened = text[:max_len]
+    return shortened + "..."
+
+
+def make_unique_sheet_name(base_name, used_names):
+    invalid_chars = ['\\', '/', '*', '?', ':', '[', ']']
+    for ch in invalid_chars:
+        base_name = base_name.replace(ch, "_")
+    base_name = base_name.strip() or "Bill"
+    base_name = base_name[:31]
+
+    candidate = base_name
+    counter = 2
+    while candidate in used_names:
+        suffix = f"_{counter}"
+        max_base_len = 31 - len(suffix)
+        candidate = f"{base_name[:max_base_len]}{suffix}"
+        counter += 1
+
+    used_names.add(candidate)
+    return candidate
+
+
+def split_text_for_excel(text, max_chunk_size=5000):
+    if not text:
+        return [""]
+    text = str(text)
+    return [text[start:start + max_chunk_size] for start in range(0, len(text), max_chunk_size)]
+
+
+def build_bill_text_sheet(details, latest_text_record, full_text):
+    text_chunks = split_text_for_excel(full_text, max_chunk_size=5000)
+    rows = []
+    for i, chunk in enumerate(text_chunks, start=1):
+        rows.append({
+            "bill_id": details.get("bill_id") if i == 1 else "",
+            "state": details.get("search_state") if i == 1 else "",
+            "bill_number": details.get("bill_number") if i == 1 else "",
+            "title": details.get("title") if i == 1 else "",
+            "bill_text_date": latest_text_record.get("date") if i == 1 else "",
+            "bill_text_type": latest_text_record.get("type") if i == 1 else "",
+            "bill_text_mime": latest_text_record.get("mime") if i == 1 else "",
+            "text_part": i,
+            "full_bill_text": chunk
+        })
+
+    return pd.DataFrame(rows, columns=[
+        "bill_id", "state", "bill_number", "title", "bill_text_date",
+        "bill_text_type", "bill_text_mime", "text_part", "full_bill_text"
+    ])
+
+
+def apply_filter(bills, phrases):
+    if not phrases:
+        return bills
+
+    filtered = []
+    for bill in bills:
+        title = bill.get("title", "").lower()
+        desc = bill.get("description", "").lower()
+        if any(phrase.lower() in title or phrase.lower() in desc for phrase in phrases):
+            filtered.append(bill)
+    return filtered
+
+
+def bill_number_sort_key(bill):
+    bill_number = str(bill.get("bill_number") or bill.get("number") or "").strip().upper()
+    match = re.match(r"([A-Z]+)\s*0*([0-9]+)", bill_number)
+    if match:
+        prefix = match.group(1)
+        number = int(match.group(2))
+        return (prefix, number, bill_number)
+    return (bill_number, float("inf"), bill_number)
+
+
+def sort_bills(bills, sort_option):
+    if sort_option == "Original order":
+        return list(bills)
+
+    bills_copy = list(bills)
+
+    if sort_option == "Status":
+        return sorted(
+            bills_copy,
+            key=lambda bill: (
+                STATUS_SORT_PRIORITY.get(BILL_STATUS_OPTIONS.get(bill.get("status"), ""), 999),
+                str(bill.get("search_state", "")),
+                bill_number_sort_key(bill)
+            )
+        )
+
+    if sort_option == "Bill number":
+        return sorted(
+            bills_copy,
+            key=lambda bill: (str(bill.get("search_state", "")), bill_number_sort_key(bill))
+        )
+
+    if sort_option == "Title A–Z":
+        return sorted(
+            bills_copy,
+            key=lambda bill: (str(bill.get("search_state", "")), str(bill.get("title") or "").lower())
+        )
+
+    return bills_copy
+
+
+def get_status_filter_source():
+    if st.session_state.precision_search_ran and st.session_state.third_layer_results:
+        return st.session_state.third_layer_results
+    if st.session_state.focus_search_ran and st.session_state.second_layer_results:
+        return st.session_state.second_layer_results
+    if st.session_state.general_search_ran and st.session_state.base_results:
+        return st.session_state.base_results
+    return []
+
+
+def get_selected_bill_ids_in_current_results(bills):
+    selected_ids = []
+    for bill in bills:
+        bill_id = bill.get("bill_id")
+        if st.session_state.get(f"selected_bill_{bill_id}", False):
+            selected_ids.append(bill_id)
+    return selected_ids
+
+
+def get_selected_bill_ids_global():
+    selected_ids = []
+    for key, value in st.session_state.items():
+        if key.startswith("selected_bill_") and value is True:
+            try:
+                selected_ids.append(int(key.replace("selected_bill_", "")))
+            except ValueError:
+                pass
+    return selected_ids
+
+
+def paginate_bills(bills, per_page, current_page):
+    total_results = len(bills)
+    total_pages = max(1, (total_results + per_page - 1) // per_page) if total_results > 0 else 1
+    current_page = min(current_page, total_pages)
+    current_page = max(1, current_page)
+    start_idx = (current_page - 1) * per_page
+    end_idx = min(start_idx + per_page, total_results)
+    page_bills = bills[start_idx:end_idx]
+    return {
+        "page_bills": page_bills,
+        "total_results": total_results,
+        "total_pages": total_pages,
+        "current_page": current_page,
+        "start_idx": start_idx,
+        "end_idx": end_idx,
+    }
+
+
+@st.cache_data(ttl=86400)
+def get_active_session(state, api_key):
+    increment_api_counter("api_calls_session_lookup")
+    url = f"https://api.legiscan.com/?key={api_key}&op=getSessionList&state={state}"
+    response = requests.get(url)
+    data = response.json()
+
+    if data.get("status") != "OK":
+        return None, None
+
+    for session in data.get("sessions", []):
+        if session.get("sine_die") == 0 and session.get("special") == 0:
+            return session.get("session_id"), session.get("session_name")
+
+    return None, None
+
+
+@st.cache_data(ttl=86400)
+def get_master_list(session_id, api_key):
+    increment_api_counter("api_calls_bill_list_lookup")
+    url = f"https://api.legiscan.com/?key={api_key}&op=getMasterList&id={session_id}"
+    response = requests.get(url)
+    data = response.json()
+
+    if data.get("status") != "OK":
+        return []
+
+    masterlist = data.get("masterlist", {})
+    bills = []
+    for key, value in masterlist.items():
+        if key != "session":
+            bills.append(value)
+    return bills
+
+
+@st.cache_data(ttl=86400)
+def get_bill_details(bill_id, api_key):
+    increment_api_counter("api_calls_bill_details_lookup")
+    url = f"https://api.legiscan.com/?key={api_key}&op=getBill&id={bill_id}"
+    response = requests.get(url)
+    data = response.json()
+
+    if data.get("status") != "OK":
+        return {}
+    return data.get("bill", {})
+
+
+@st.cache_data(ttl=86400)
+def get_bill_text(doc_id, api_key):
+    increment_api_counter("api_calls_bill_text_lookup")
+    url = f"https://api.legiscan.com/?key={api_key}&op=getBillText&id={doc_id}"
+    response = requests.get(url)
+    data = response.json()
+
+    if data.get("status") != "OK":
+        return {}
+    return data.get("text", {})
+
+
+def get_latest_text_record(details, api_key):
+    texts = details.get("texts") or []
+    if not texts:
+        return {}
+
+    sorted_texts = sorted(texts, key=lambda x: (x.get("date") or "", x.get("doc_id") or 0))
+    latest_text_meta = sorted_texts[-1]
+    doc_id = latest_text_meta.get("doc_id")
+
+    if not doc_id:
+        return {}
+
+    return get_bill_text(doc_id, api_key)
+
+
+def extract_full_bill_text(text_record):
+    if not text_record:
+        return "[No bill text available]"
+
+    encoded_doc = text_record.get("doc")
+    mime_type = (text_record.get("mime") or "").lower()
+
+    if not encoded_doc:
+        return "[No bill text document returned]"
+
+    try:
+        decoded_bytes = base64.b64decode(encoded_doc)
+    except Exception:
+        return "[Unable to decode base64 bill document]"
+
+    if "pdf" in mime_type:
+        if PdfReader is None:
+            return "[PDF text extraction unavailable: install pypdf with 'python3 -m pip install pypdf']"
+        try:
+            reader = PdfReader(BytesIO(decoded_bytes))
+            pages = [page.extract_text() or "" for page in reader.pages]
+            extracted = "\n\n".join(pages).strip()
+            return extracted if extracted else "[PDF returned but no readable text could be extracted]"
+        except Exception:
+            return "[Unable to extract text from PDF bill document]"
+
+    if "html" in mime_type or "text" in mime_type or "xml" in mime_type:
+        try:
+            decoded_text = decoded_bytes.decode("utf-8", errors="ignore").strip()
+            return decoded_text if decoded_text else "[Text document returned but empty after decoding]"
+        except Exception:
+            return "[Unable to decode text bill document]"
+
+    return f"[Unsupported bill text format: {mime_type}]"
+
+
+def build_export_package(export_sorted, include_full_text):
+    output_data = []
+    bill_text_sheets = {}
+    used_sheet_names = set()
+
+    for bill in export_sorted:
+        details = get_bill_details(bill["bill_id"], API_KEY)
+        details["search_state"] = bill.get("search_state", "")
+
+        output_data.append({
+            "bill_id": details.get("bill_id"),
+            "state": bill.get("search_state", ""),
+            "session_id": details.get("session_id"),
+            "bill_number": details.get("bill_number"),
+            "status": details.get("status"),
+            "status_date": details.get("status_date"),
+            "title": details.get("title"),
+            "description": details.get("description"),
+            "url": details.get("url"),
+            "state_link": details.get("state_link")
+        })
+
+        if include_full_text:
+            latest_text_record = get_latest_text_record(details, API_KEY)
+            full_text = extract_full_bill_text(latest_text_record)
+
+            bill_number_for_sheet = details.get("bill_number", f"bill_{details.get('bill_id')}")
+            sheet_bill_number = f"{bill.get('search_state', '')}_{bill_number_for_sheet}"
+            sheet_name = make_unique_sheet_name(str(sheet_bill_number), used_sheet_names)
+
+            bill_text_sheets[sheet_name] = build_bill_text_sheet(
+                details, latest_text_record, full_text
+            )
+
+    summary_df = pd.DataFrame(output_data, columns=[
+        "bill_id", "state", "session_id", "bill_number", "status",
+        "status_date", "title", "description", "url", "state_link"
+    ])
+
+    excel_buffer = BytesIO()
+    with pd.ExcelWriter(excel_buffer, engine="openpyxl") as writer:
+        summary_df.to_excel(writer, sheet_name="Summary", index=False)
+
+        if include_full_text:
+            for sheet_name, text_df in bill_text_sheets.items():
+                text_df.to_excel(writer, sheet_name=sheet_name, index=False)
+
+    excel_buffer.seek(0)
+    return excel_buffer.getvalue(), len(export_sorted)
+
+
+def update_bill_selection_from_widget(bill_id, context_suffix):
+    widget_key = f"select_bill_widget_{bill_id}_{context_suffix}"
+    selected_value = st.session_state.get(widget_key, False)
+    st.session_state[f"selected_bill_{bill_id}"] = selected_value
+
+    if context_suffix == "display":
+        st.session_state["results_displayed_expanded"] = True
+    elif context_suffix == "cart":
+        st.session_state["results_cart_expanded"] = True
+
+
+def render_bill_expander(bill, highlight_terms, context_suffix=""):
+    bill_state = bill.get("search_state", "")
+    bill_number = bill.get("bill_number") or bill.get("number") or "No Bill Number"
+    bill_title = bill.get("title", "No Title")
+    bill_desc = bill.get("description", "No Description")
+    bill_id = bill.get("bill_id")
+    bill_status_code = bill.get("status")
+    bill_status_label = BILL_STATUS_OPTIONS.get(bill_status_code, f"Status {bill_status_code}")
+
+    short_title = shorten_text(bill_title, 85)
+
+    selected_key = f"selected_bill_{bill_id}"
+    widget_key = f"select_bill_widget_{bill_id}_{context_suffix}"
+    st.session_state[widget_key] = st.session_state.get(selected_key, False)
+
+    text_checkbox_key = f"show_bill_text_{bill_id}_{context_suffix}" if context_suffix else f"show_bill_text_{bill_id}"
+
+    is_selected = st.session_state.get(selected_key, False)
+    base_label = f"{bill_state} | {bill_number} | {bill_status_label} | {short_title}"
+    expander_label = f"✅ {base_label}" if is_selected else base_label
+
+    with st.expander(expander_label, expanded=False):
+        st.checkbox(
+            f"Select {bill_state} {bill_number} for download",
+            key=widget_key,
+            on_change=update_bill_selection_from_widget,
+            args=(bill_id, context_suffix),
+        )
+        st.caption("Expected API cost: 0 calls")
+
+        st.markdown(f"**Jurisdiction:** {bill_state}")
+        st.markdown(f"**Bill Status:** {bill_status_label}")
+
+        st.markdown("**Title Preview**", unsafe_allow_html=True)
+        st.markdown(
+            highlight_keywords(bill_title, highlight_terms),
+            unsafe_allow_html=True
+        )
+
+        st.markdown("**Description Preview**", unsafe_allow_html=True)
+        st.markdown(
+            highlight_keywords(bill_desc, highlight_terms),
+            unsafe_allow_html=True
+        )
+
+        show_text = st.checkbox(
+            f"Show bill text for {bill_state} {bill_number}",
+            key=text_checkbox_key
+        )
+        st.caption("Expected API cost: up to 2 calls (1 bill details lookup + 1 bill text lookup)")
+
+        if show_text:
+            details = get_bill_details(bill_id, API_KEY)
+            latest_text_record = get_latest_text_record(details, API_KEY)
+            full_text = extract_full_bill_text(latest_text_record)
+            bill_text_date = latest_text_record.get("date", "Unknown date")
+
+            st.markdown("**Bill Text Metadata**")
+            st.markdown(f"- Bill text date: {bill_text_date}")
+            st.markdown(f"- Bill text type: {latest_text_record.get('type', 'Unknown')}")
+            st.markdown(f"- Bill text mime: {latest_text_record.get('mime', 'Unknown')}")
+
+            st.text_area(
+                label=f"Bill text for {bill_state} {bill_number}",
+                value=full_text,
+                height=500,
+                key=f"bill_text_viewer_{bill_id}_{context_suffix}" if context_suffix else f"bill_text_viewer_{bill_id}"
+            )
+
+
+def run_general_search():
+    reset_all_pagination()
+    st.session_state.general_search_ran = True
+    st.session_state.focus_search_ran = False
+    st.session_state.precision_search_ran = False
+    st.session_state.status_filter_ran = False
+
+    st.session_state.bills = []
+    st.session_state.base_results = []
+    st.session_state.second_layer_results = []
+    st.session_state.third_layer_results = []
+    st.session_state.status_filtered_results = []
+    st.session_state.prepared_export_data = None
+    st.session_state.prepared_export_count = 0
+    st.session_state.results_displayed_expanded = False
+    st.session_state.results_cart_expanded = False
+
+    selected_jurisdictions = get_active_jurisdictions()
+    first_keywords = parse_keywords(st.session_state.get("first_filter_text", ""))
+
+    if not selected_jurisdictions:
+        st.session_state["ui_message_type"] = "warning"
+        st.session_state["ui_message_text"] = "Please enter at least one valid jurisdiction, or use the nationwide option."
+        return
+
+    combined_bills = []
+    jurisdictions_with_active_sessions = []
+    jurisdictions_without_active_sessions = []
+
+    for jurisdiction in selected_jurisdictions:
+        session_id, session_name = get_active_session(jurisdiction, API_KEY)
+
+        if not session_id:
+            jurisdictions_without_active_sessions.append(jurisdiction)
+            continue
+
+        display_name = JURISDICTION_OPTIONS.get(jurisdiction, jurisdiction)
+        jurisdictions_with_active_sessions.append(f"{jurisdiction} ({display_name} — {session_name})")
+        jurisdiction_bills = get_master_list(session_id, API_KEY)
+
+        for bill in jurisdiction_bills:
+            bill["search_state"] = jurisdiction
+
+        combined_bills.extend(jurisdiction_bills)
+
+    deduped_bills = []
+    seen_bill_ids = set()
+    for bill in combined_bills:
+        bill_id = bill.get("bill_id")
+        if bill_id not in seen_bill_ids:
+            deduped_bills.append(bill)
+            seen_bill_ids.add(bill_id)
+
+    filtered = apply_filter(deduped_bills, first_keywords)
+
+    st.session_state.base_results = filtered
+    st.session_state.bills = filtered
+
+    if jurisdictions_with_active_sessions and jurisdictions_without_active_sessions:
+        st.session_state["ui_message_type"] = "info"
+        st.session_state["ui_message_text"] = (
+            f"Using active sessions for: {', '.join(jurisdictions_with_active_sessions)}. "
+            f"No active regular session found for: {', '.join(jurisdictions_without_active_sessions)}."
+        )
+    elif jurisdictions_with_active_sessions:
+        st.session_state["ui_message_type"] = "success"
+        st.session_state["ui_message_text"] = (
+            f"Using active sessions for: {', '.join(jurisdictions_with_active_sessions)}"
+        )
+    else:
+        st.session_state["ui_message_type"] = "error"
+        st.session_state["ui_message_text"] = "No active regular sessions found for the selected jurisdictions."
+
+
+def run_focus_search():
+    if not st.session_state.base_results:
+        st.session_state["ui_message_type"] = "warning"
+        st.session_state["ui_message_text"] = "Run the General Search first."
+        return
+
+    reset_all_pagination()
+    st.session_state.focus_search_ran = True
+    st.session_state.precision_search_ran = False
+    st.session_state.status_filter_ran = False
+    st.session_state.prepared_export_data = None
+    st.session_state.prepared_export_count = 0
+    st.session_state.results_displayed_expanded = False
+    st.session_state.results_cart_expanded = False
+
+    second_keywords = parse_keywords(st.session_state.get("second_filter_text", ""))
+    second_filtered = apply_filter(st.session_state.base_results, second_keywords)
+
+    st.session_state.second_layer_results = second_filtered
+    st.session_state.third_layer_results = []
+    st.session_state.status_filtered_results = []
+    st.session_state.bills = second_filtered
+    st.session_state["ui_message_type"] = "info"
+    st.session_state["ui_message_text"] = "Focus Search applied."
+
+
+def run_precision_search():
+    if not st.session_state.second_layer_results:
+        st.session_state["ui_message_type"] = "warning"
+        st.session_state["ui_message_text"] = "Run the Focus Search first."
+        return
+
+    reset_all_pagination()
+    st.session_state.precision_search_ran = True
+    st.session_state.status_filter_ran = False
+    st.session_state.prepared_export_data = None
+    st.session_state.prepared_export_count = 0
+    st.session_state.results_displayed_expanded = False
+    st.session_state.results_cart_expanded = False
+
+    third_keywords = parse_keywords(st.session_state.get("third_filter_text", ""))
+    third_filtered = apply_filter(st.session_state.second_layer_results, third_keywords)
+
+    st.session_state.third_layer_results = third_filtered
+    st.session_state.status_filtered_results = []
+    st.session_state.bills = third_filtered
+    st.session_state["ui_message_type"] = "info"
+    st.session_state["ui_message_text"] = "Precision Search applied."
+
+
+def run_status_search():
+    source_bills = get_status_filter_source()
+    if not source_bills:
+        st.session_state["ui_message_type"] = "warning"
+        st.session_state["ui_message_text"] = "Run the General Search first."
+        return
+
+    reset_all_pagination()
+    st.session_state.status_filter_ran = True
+    st.session_state.prepared_export_data = None
+    st.session_state.prepared_export_count = 0
+    st.session_state.results_displayed_expanded = False
+    st.session_state.results_cart_expanded = False
+
+    selected_status_labels = st.session_state.get("selected_status_labels", [])
+    status_filtered = apply_status_filter(source_bills, selected_status_labels)
+    st.session_state.status_filtered_results = status_filtered
+    st.session_state.bills = status_filtered
+    st.session_state["ui_message_type"] = "info"
+    st.session_state["ui_message_text"] = "Bill Status filter applied."
+
+
+left_col, right_col = st.columns([4, 1], gap="large")
+
+with left_col:
+    all_mode_active = st.session_state.get("all_jurisdictions_mode", False)
+
+    st.text_input(
+        "Select jurisdiction(s) (comma separated codes or names)",
+        key="jurisdiction_text",
+        placeholder="Example: NY, CA, US",
+        disabled=all_mode_active
+    )
+
+    current_jurisdictions = get_active_jurisdictions()
+
+    with st.expander("Jurisdiction Options", expanded=st.session_state.open_jurisdiction_expander):
+        st.caption("Click a jurisdiction to add or remove it from the field above, or use subgroup actions.")
+
+        for region_name, subgroups in JURISDICTION_GROUPS.items():
+            region_codes = [code for subgroup_codes in subgroups.values() for code in subgroup_codes]
+            region_selected_count = sum(1 for code in region_codes if code in current_jurisdictions)
+            region_total_count = len(region_codes)
+            region_prefix = "✅ " if region_selected_count > 0 else ""
+
+            with st.expander(f"{region_prefix}{region_name} ({region_selected_count}/{region_total_count})", expanded=False):
+                for subgroup_name, codes in subgroups.items():
+                    subgroup_selected_count = sum(1 for code in codes if code in current_jurisdictions)
+                    subgroup_total_count = len(codes)
+                    subgroup_prefix = "✅ " if subgroup_selected_count > 0 else ""
+
+                    with st.expander(f"{subgroup_prefix}{subgroup_name} ({subgroup_selected_count}/{subgroup_total_count})", expanded=False):
+                        action_col1, action_col2, action_col3 = st.columns([1.1, 1.1, 2.3])
+                        with action_col1:
+                            st.button(
+                                "Select All",
+                                key=f"select_all_{region_name}_{subgroup_name}",
+                                on_click=add_jurisdiction_group,
+                                args=(codes,),
+                                use_container_width=True
+                            )
+                        with action_col2:
+                            st.button(
+                                "Deselect All",
+                                key=f"deselect_all_{region_name}_{subgroup_name}",
+                                on_click=remove_jurisdiction_group,
+                                args=(codes,),
+                                use_container_width=True
+                            )
+                        with action_col3:
+                            st.caption(f"Manage all jurisdictions in {subgroup_name}")
+
+                        cols = st.columns(2)
+                        for idx, code in enumerate(codes):
+                            with cols[idx % 2]:
+                                name = JURISDICTION_OPTIONS[code]
+                                is_selected = code in current_jurisdictions
+                                button_label = f"✅ {code} — {name}" if is_selected else f"{code} — {name}"
+                                st.button(
+                                    button_label,
+                                    key=f"jurisdiction_option_{region_name}_{subgroup_name}_{code}",
+                                    on_click=toggle_jurisdiction,
+                                    args=(code,),
+                                    use_container_width=True,
+                                    disabled=all_mode_active
+                                )
+
+        clear_jur_col1, clear_jur_col2 = st.columns([1.4, 3])
+        with clear_jur_col1:
+            st.button(
+                "Clear All Selected Jurisdictions",
+                on_click=clear_all_selected_jurisdictions,
+                use_container_width=True,
+                key="clear_all_selected_jurisdictions_button"
+            )
+        with clear_jur_col2:
+            st.caption("Remove every manually selected jurisdiction and re-enable custom selection.")
+
+    top_jur_col1, top_jur_col2 = st.columns([2.2, 3])
+    with top_jur_col1:
+        st.button(
+            "Search All 50 States, Washington, D.C., and U.S. Congress",
+            on_click=activate_all_jurisdictions_mode,
+            use_container_width=True,
+            key="activate_all_jurisdictions_mode_button"
+        )
+        st.caption("Expected API cost: up to 104 calls")
+    with top_jur_col2:
+        if all_mode_active:
+            st.success("Nationwide jurisdiction mode is active.")
+        else:
+            st.caption("Use this to search across every state plus D.C. and Congress.")
+
+    SELECTED_JURISDICTIONS = current_jurisdictions
+
+    st.markdown("### General Search")
+    first_filter_input = st.text_input(
+        "Enter general search keywords (comma separated)",
+        key="first_filter_text",
+        on_change=run_general_search
+    )
+    FIRST_FILTER_KEYWORDS = parse_keywords(first_filter_input)
+    st.caption("Click a suggested keyword to add or remove it from the General Search box.")
+
+    selected_layer1_keywords = parse_keywords(st.session_state.first_filter_text)
+
+    for category, phrases in LAYER_1_KEYWORD_CATEGORIES.items():
+        selected_count, total_count = get_category_selection_status(phrases, st.session_state.first_filter_text)
+        prefix = "✅ " if selected_count > 0 else ""
+        expander_label = f"{prefix}{category} ({selected_count}/{total_count})"
+        keep_open = st.session_state.open_layer1_category == category
+
+        with st.expander(expander_label, expanded=keep_open):
+            cols = st.columns(2)
+            for idx, phrase in enumerate(phrases):
+                with cols[idx % 2]:
+                    is_selected = phrase.lower() in selected_layer1_keywords
+                    button_label = f"✅ {phrase}" if is_selected else phrase
+                    st.button(
+                        button_label,
+                        key=f"layer1_filter_{category}_{phrase}",
+                        on_click=toggle_first_filter_keyword,
+                        args=(phrase, category)
+                    )
+
+    st.button("Run General Search", on_click=run_general_search)
+    st.caption("Expected API cost: 2 calls per selected jurisdiction (1 session lookup + 1 bill list lookup)")
+
+    st.markdown("### Focus Search")
+    second_filter_input = st.text_input(
+        "Enter focus search keywords to narrow the results (comma separated)",
+        key="second_filter_text",
+        on_change=run_focus_search
+    )
+    SECOND_FILTER_KEYWORDS = parse_keywords(second_filter_input)
+
+    with st.expander("Focus Search Suggested Keywords", expanded=st.session_state.open_focus_outer):
+        st.caption("Click a suggested keyword to add or remove it from the Focus Search box.")
+        selected_layer2_keywords = parse_keywords(st.session_state.second_filter_text)
+
+        for category, phrases in LAYER_2_KEYWORD_CATEGORIES.items():
+            selected_count, total_count = get_category_selection_status(phrases, st.session_state.second_filter_text)
+            prefix = "✅ " if selected_count > 0 else ""
+            expander_label = f"{prefix}{category} ({selected_count}/{total_count})"
+            keep_open = st.session_state.open_layer2_category == category
+
+            with st.expander(expander_label, expanded=keep_open):
+                cols = st.columns(2)
+                for idx, phrase in enumerate(phrases):
+                    with cols[idx % 2]:
+                        is_selected = phrase.lower() in selected_layer2_keywords
+                        button_label = f"✅ {phrase}" if is_selected else phrase
+                        st.button(
+                            button_label,
+                            key=f"layer2_filter_{category}_{phrase}",
+                            on_click=toggle_second_filter_keyword,
+                            args=(phrase, category)
+                        )
+
+    st.button("Run Focus Search", on_click=run_focus_search)
+    st.caption("Expected API cost: 0 calls (local filtering only)")
+
+    st.markdown("### Precision Search")
+    third_filter_input = st.text_input(
+        "Enter precision search keywords to refine the results further (comma separated)",
+        key="third_filter_text",
+        on_change=run_precision_search
+    )
+    THIRD_FILTER_KEYWORDS = parse_keywords(third_filter_input)
+
+    with st.expander("Precision Search Suggested Keywords", expanded=st.session_state.open_precision_outer):
+        st.caption("Click a suggested keyword to add or remove it from the Precision Search box.")
+        selected_layer3_keywords = parse_keywords(st.session_state.third_filter_text)
+
+        for category, phrases in LAYER_3_KEYWORD_CATEGORIES.items():
+            selected_count, total_count = get_category_selection_status(phrases, st.session_state.third_filter_text)
+            prefix = "✅ " if selected_count > 0 else ""
+            expander_label = f"{prefix}{category} ({selected_count}/{total_count})"
+            keep_open = st.session_state.open_layer3_category == category
+
+            with st.expander(expander_label, expanded=keep_open):
+                cols = st.columns(2)
+                for idx, phrase in enumerate(phrases):
+                    with cols[idx % 2]:
+                        is_selected = phrase.lower() in selected_layer3_keywords
+                        button_label = f"✅ {phrase}" if is_selected else phrase
+                        st.button(
+                            button_label,
+                            key=f"layer3_filter_{category}_{phrase}",
+                            on_click=toggle_third_filter_keyword,
+                            args=(phrase, category)
+                        )
+
+    st.button("Run Precision Search", on_click=run_precision_search)
+    st.caption("Expected API cost: 0 calls (local filtering only)")
+
+    st.markdown("### Bill Status")
+    st.pills(
+        "Select bill statuses to filter results",
+        options=list(BILL_STATUS_OPTIONS.values()),
+        default=st.session_state.selected_status_labels,
+        selection_mode="multi",
+        key="selected_status_labels",
+    )
+
+    st.button("Run Bill Status Filter", on_click=run_status_search)
+    st.caption("Expected API cost: 0 calls (local filtering only)")
+
+    st.button("Clear Filters and Results", on_click=clear_filters_and_results)
+
+    if st.session_state["ui_message_text"]:
+        message_type = st.session_state.get("ui_message_type", "info")
+        message_text = st.session_state.get("ui_message_text", "")
+
+        if message_type == "success":
+            st.success(message_text)
+        elif message_type == "warning":
+            st.warning(message_text)
+        elif message_type == "error":
+            st.error(message_text)
+        else:
+            st.info(message_text)
+
+    highlight_terms = FIRST_FILTER_KEYWORDS + SECOND_FILTER_KEYWORDS + THIRD_FILTER_KEYWORDS
+
+    selected_bill_ids = set(get_selected_bill_ids_in_current_results(st.session_state.bills))
+    selected_bill_ids_global = set(get_selected_bill_ids_global())
+
+    display_pool = [bill for bill in st.session_state.bills if bill.get("bill_id") not in selected_bill_ids]
+    cart_pool = [bill for bill in st.session_state.bills if bill.get("bill_id") in selected_bill_ids]
+
+    display_sorted = sort_bills(display_pool, st.session_state.display_sort_option)
+    cart_sorted = sort_bills(cart_pool, st.session_state.cart_sort_option)
+
+    display_page = paginate_bills(
+        display_sorted,
+        int(st.session_state.display_results_per_page),
+        st.session_state.display_current_page
+    )
+    st.session_state.display_current_page = display_page["current_page"]
+
+    cart_page = paginate_bills(
+        cart_sorted,
+        int(st.session_state.cart_results_per_page),
+        st.session_state.cart_current_page
+    )
+    st.session_state.cart_current_page = cart_page["current_page"]
+
+    st.markdown("### Selection Summary")
+    summary_col1, summary_col2 = st.columns([1, 1])
+    with summary_col1:
+        st.metric("Selected bills", len(selected_bill_ids_global))
+    with summary_col2:
+        st.metric("Current displayed results", len(display_pool))
+
+    filter_col1, filter_col2, filter_col3, filter_col4 = st.columns(4)
+    with filter_col1:
+        st.markdown("**General Search**")
+        st.caption(format_filter_value(FIRST_FILTER_KEYWORDS))
+    with filter_col2:
+        st.markdown("**Focus Search**")
+        st.caption(format_filter_value(SECOND_FILTER_KEYWORDS))
+    with filter_col3:
+        st.markdown("**Precision Search**")
+        st.caption(format_filter_value(THIRD_FILTER_KEYWORDS))
+    with filter_col4:
+        st.markdown("**Bill Status**")
+        st.caption(format_filter_value(st.session_state.selected_status_labels))
+
+    st.markdown("### Results")
+
+    with st.expander(
+        f"Displayed Bills ({len(display_pool)})",
+        expanded=st.session_state.results_displayed_expanded
+    ):
+        controls_col1, controls_col2 = st.columns([6, 3], gap="small")
+        with controls_col1:
+            st.pills(
+                "Sort results by",
+                options=SORT_OPTIONS,
+                default=st.session_state.display_sort_option,
+                selection_mode="single",
+                key="display_sort_option",
+            )
+        with controls_col2:
+            st.markdown(
+                """
+                <style>
+                .results-per-page-center-display label {
+                    text-align: center !important;
+                    width: 100%;
+                    display: block;
+                }
+                </style>
+                <div class="results-per-page-center-display">
+                """,
+                unsafe_allow_html=True,
+            )
+            st.pills(
+                "Results per page",
+                options=RESULTS_PER_PAGE_OPTIONS,
+                default=st.session_state.display_results_per_page,
+                selection_mode="single",
+                key="display_results_per_page",
+            )
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        st.subheader(f"Displayed bills: {len(display_pool)}")
+        if display_page["total_results"] > 0:
+            st.write("Preview the matching bills below:")
+            for bill in display_page["page_bills"]:
+                render_bill_expander(bill, highlight_terms, context_suffix="display")
+        else:
+            st.caption("No displayed bills yet.")
+
+        nav_col1, nav_col2, nav_col3 = st.columns([1, 2, 1])
+        with nav_col1:
+            st.button(
+                "Previous",
+                on_click=go_previous_display_page,
+                disabled=display_page["current_page"] == 1,
+                use_container_width=True,
+                key="display_prev"
+            )
+        with nav_col2:
+            if display_page["total_results"] > 0:
+                show_text = f"Showing {display_page['start_idx'] + 1}-{display_page['end_idx']} of {display_page['total_results']} bills"
+            else:
+                show_text = "No bills to display"
+            st.markdown(
+                f"<div style='text-align:center; padding-top:0.4rem;'>"
+                f"{show_text}<br>"
+                f"Page {display_page['current_page']} of {display_page['total_pages']}"
+                f"</div>",
+                unsafe_allow_html=True,
+            )
+        with nav_col3:
+            st.button(
+                "Next",
+                on_click=go_next_display_page,
+                args=(display_page["total_pages"],),
+                disabled=display_page["current_page"] == display_page["total_pages"],
+                use_container_width=True,
+                key="display_next"
+            )
+
+    with st.expander(
+        f"Download Cart ({len(cart_pool)})",
+        expanded=st.session_state.results_cart_expanded
+    ):
+        cart_controls_col1, cart_controls_col2 = st.columns([6, 3], gap="small")
+        with cart_controls_col1:
+            st.pills(
+                "Sort results by",
+                options=SORT_OPTIONS,
+                default=st.session_state.cart_sort_option,
+                selection_mode="single",
+                key="cart_sort_option",
+            )
+        with cart_controls_col2:
+            st.markdown(
+                """
+                <style>
+                .results-per-page-center-cart label {
+                    text-align: center !important;
+                    width: 100%;
+                    display: block;
+                }
+                </style>
+                <div class="results-per-page-center-cart">
+                """,
+                unsafe_allow_html=True,
+            )
+            st.pills(
+                "Results per page",
+                options=RESULTS_PER_PAGE_OPTIONS,
+                default=st.session_state.cart_results_per_page,
+                selection_mode="single",
+                key="cart_results_per_page",
+            )
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        clear_col1, clear_col2 = st.columns([1.5, 3])
+        with clear_col1:
+            st.button(
+                "Clear Selected Bills",
+                on_click=clear_selected_bills,
+                use_container_width=True,
+                key="clear_selected_bills_button"
+            )
+        with clear_col2:
+            st.markdown(f"**{len(selected_bill_ids_global)} bill(s) currently selected**")
+
+        st.subheader(f"Bills in cart: {len(cart_pool)}")
+
+        if cart_page["total_results"] > 0:
+            st.write("Review the selected bills below:")
+
+            for bill in cart_page["page_bills"]:
+                render_bill_expander(bill, highlight_terms, context_suffix="cart")
+
+            cart_nav_col1, cart_nav_col2, cart_nav_col3 = st.columns([1, 2, 1])
+            with cart_nav_col1:
+                st.button(
+                    "Previous",
+                    on_click=go_previous_cart_page,
+                    disabled=cart_page["current_page"] == 1,
+                    use_container_width=True,
+                    key="cart_prev"
+                )
+            with cart_nav_col2:
+                cart_show_text = f"Showing {cart_page['start_idx'] + 1}-{cart_page['end_idx']} of {cart_page['total_results']} bills"
+                st.markdown(
+                    f"<div style='text-align:center; padding-top:0.4rem;'>"
+                    f"{cart_show_text}<br>"
+                    f"Page {cart_page['current_page']} of {cart_page['total_pages']}"
+                    f"</div>",
+                    unsafe_allow_html=True,
+                )
+            with cart_nav_col3:
+                st.button(
+                    "Next",
+                    on_click=go_next_cart_page,
+                    args=(cart_page["total_pages"],),
+                    disabled=cart_page["current_page"] == cart_page["total_pages"],
+                    use_container_width=True,
+                    key="cart_next"
+                )
+        else:
+            st.caption("No bills in the cart yet.")
+
+    st.markdown("### Export")
+
+    include_full_text = st.checkbox("Include full bill text as separate Excel tabs for selected bills")
+
+    if include_full_text:
+        st.caption("Expected API cost for export: up to 2 calls per selected bill")
+    else:
+        st.caption("Expected API cost for export: up to 1 call per selected bill")
+
+    export_selected_ids = get_selected_bill_ids_in_current_results(st.session_state.bills)
+    export_selected_set = set(export_selected_ids)
+    export_sorted = sort_bills(
+        [bill for bill in st.session_state.bills if bill.get("bill_id") in export_selected_set],
+        st.session_state.cart_sort_option
+    )
+
+    prepare_col1, prepare_col2 = st.columns([1.3, 2], gap="small")
+    with prepare_col1:
+        prepare_clicked = st.button("Prepare Selected Bill Information", use_container_width=True)
+    with prepare_col2:
+        st.markdown(f"**{len(export_sorted)} bill(s) queued for export**")
+
+    if prepare_clicked:
+        if export_sorted:
+            prepared_bytes, prepared_count = build_export_package(export_sorted, include_full_text)
+            st.session_state.prepared_export_data = prepared_bytes
+            st.session_state.prepared_export_count = prepared_count
+        else:
+            st.session_state.prepared_export_data = None
+            st.session_state.prepared_export_count = 0
+
+    download_col1, download_col2 = st.columns([1.3, 2], gap="small")
+    with download_col1:
+        st.download_button(
+            label="Download Excel File",
+            data=st.session_state.prepared_export_data or b"",
+            file_name="selected_bill_details.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            disabled=st.session_state.prepared_export_data is None,
+            use_container_width=True,
+        )
+    with download_col2:
+        st.markdown(f"**{st.session_state.prepared_export_count} bill(s) in current export file**")
+
+with right_col:
+    st.markdown("### Search Status")
+
+    if st.session_state.general_search_ran:
+        st.metric("General Search", len(st.session_state.base_results))
+    else:
+        st.caption("General Search has not been run yet.")
+
+    if st.session_state.focus_search_ran:
+        st.metric("Focus Search", len(st.session_state.second_layer_results))
+    else:
+        st.caption("Run Focus Search to narrow the results.")
+
+    if st.session_state.precision_search_ran:
+        st.metric("Precision Search", len(st.session_state.third_layer_results))
+    else:
+        st.caption("Run Precision Search to refine the results.")
+
+    if st.session_state.status_filter_ran:
+        st.metric("Bill Status", len(st.session_state.status_filtered_results))
+    else:
+        st.caption("Run Bill Status to filter by legislative status.")
+
+    st.markdown("---")
+    st.markdown("### Current Filters")
+    if st.session_state.get("all_jurisdictions_mode", False):
+        st.markdown("**Jurisdictions:** All 50 states, Washington, D.C., and U.S. Congress")
+    else:
+        st.markdown(f"**Jurisdictions:** {format_filter_value(SELECTED_JURISDICTIONS)}")
+    st.markdown(f"**General Search:** {format_filter_value(FIRST_FILTER_KEYWORDS)}")
+    st.markdown(f"**Focus Search:** {format_filter_value(SECOND_FILTER_KEYWORDS)}")
+    st.markdown(f"**Precision Search:** {format_filter_value(THIRD_FILTER_KEYWORDS)}")
+    st.markdown(f"**Bill Status:** {format_filter_value(st.session_state.selected_status_labels)}")
+
+    st.markdown("---")
+    st.markdown("### API Calls")
+    st.metric("Total API calls", st.session_state.api_total_calls)
+    st.metric("Session lookup", st.session_state.api_calls_session_lookup)
+    st.metric("Bill list lookup", st.session_state.api_calls_bill_list_lookup)
+    st.metric("Bill details lookup", st.session_state.api_calls_bill_details_lookup)
+    st.metric("Bill text lookup", st.session_state.api_calls_bill_text_lookup)
