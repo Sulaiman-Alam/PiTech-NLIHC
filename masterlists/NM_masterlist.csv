@@ -1,0 +1,813 @@
+state,bill_id,bill_number,title,description,status,status_date,url
+NM,2087483,,Feed Bill,Feed Bill,4,2026-01-27,https://legiscan.com/NM/bill/HB1/2026
+NM,2087541,,General Appropriation Act Of 2026,General Appropriation Act Of 2026,4,2026-03-11,https://legiscan.com/NM/bill/HB2/2026
+NM,2087591,,Dept. Of Transportation Act Of 2026,Dept. Of Transportation Act Of 2026,1,2026-01-20,https://legiscan.com/NM/bill/HB3/2026
+NM,2091344,,Health Care Affordability Fund Distributions,Health Care Affordability Fund Distributions,4,2026-03-06,https://legiscan.com/NM/bill/HB4/2026
+NM,2108051,,Juvenile Justice Changes,Juvenile Justice Changes,1,2026-02-04,https://legiscan.com/NM/bill/HB5/2026
+NM,2108182,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB6/2026
+NM,2073926,,Apprenticeship Assistance Act Transfers,Apprenticeship Assistance Act Transfers,4,2026-03-04,https://legiscan.com/NM/bill/HB7/2026
+NM,2103273,,Higher Ed. Major Projects Fund,Higher Ed. Major Projects Fund,4,2026-03-09,https://legiscan.com/NM/bill/HB8/2026
+NM,2087571,,Immigrant Safety Act,Immigrant Safety Act,4,2026-02-05,https://legiscan.com/NM/bill/HB9/2026
+NM,2085314,,Physician Assistant Interstate Compact,Physician Assistant Interstate Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB10/2026
+NM,2085310,,Audiology & Speech-language Pathology Compact,Audiology & Speech-language Pathology Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB11/2026
+NM,2085313,,Physical Therapy Licensure Compact,Physical Therapy Licensure Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB12/2026
+NM,2085312,,Occupational Therapy Licensure Compact,Occupational Therapy Licensure Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB13/2026
+NM,2085311,,Dentist & Dental Hygienist Compact,Dentist & Dental Hygienist Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB14/2026
+NM,2089356,,Medical Injury Collaborative Resolution Act,Medical Injury Collaborative Resolution Act,1,2026-01-21,https://legiscan.com/NM/bill/HB15/2026
+NM,2108200,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB16/2026
+NM,2093830,,Accessory Dwelling Units In Certain Areas,Accessory Dwelling Units In Certain Areas,1,2026-01-26,https://legiscan.com/NM/bill/HB17/2026
+NM,2108063,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB18/2026
+NM,2108035,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB19/2026
+NM,2103193,,Native American Designation On Licenses,Native American Designation On Licenses,2,2026-02-14,https://legiscan.com/NM/bill/HB20/2026
+NM,2064887,,Land Grant-merced Acequia Infrastructure Act,Land Grant-merced Acequia Infrastructure Act,1,2026-01-20,https://legiscan.com/NM/bill/HB21/2026
+NM,2064990,,Distribution Of Sensitive And Deepfake Images,Distribution Of Sensitive And Deepfake Images,1,2026-01-20,https://legiscan.com/NM/bill/HB22/2026
+NM,2064977,,Prohibiting Nonfunctional Turf Installation,Prohibiting Nonfunctional Turf Installation,1,2026-01-20,https://legiscan.com/NM/bill/HB23/2026
+NM,2064986,,Professional Recruitment And Retention Act,Professional Recruitment And Retention Act,1,2026-01-20,https://legiscan.com/NM/bill/HB24/2026
+NM,2064970,,Juvenile Firearm Use And Background Checks,Juvenile Firearm Use And Background Checks,1,2026-01-20,https://legiscan.com/NM/bill/HB25/2026
+NM,2064994,,Prohibiting Book Banning At Public Libraries,Prohibiting Book Banning At Public Libraries,1,2026-01-20,https://legiscan.com/NM/bill/HB26/2026
+NM,2064966,,Technology Jobs R&d Tax Credit Expansion,Technology Jobs R&d Tax Credit Expansion,1,2026-01-20,https://legiscan.com/NM/bill/HB27/2026
+NM,2065007,,Artificial Intelligence Transparency Act,Artificial Intelligence Transparency Act,1,2026-01-20,https://legiscan.com/NM/bill/HB28/2026
+NM,2065273,,Military Base Impact Funding,Military Base Impact Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB29/2026
+NM,2065332,,Teacher Residency Act Changes,Teacher Residency Act Changes,4,2026-03-09,https://legiscan.com/NM/bill/HB30/2026
+NM,2065622,,Ems Personnel Licensure Interstate Compact,Ems Personnel Licensure Interstate Compact,2,2026-01-28,https://legiscan.com/NM/bill/HB31/2026
+NM,2065583,,Counseling Licensure Compact,Counseling Licensure Compact,2,2026-02-05,https://legiscan.com/NM/bill/HB32/2026
+NM,2065603,,Psychology Interjurisdictional Compact,Psychology Interjurisdictional Compact,2,2026-02-05,https://legiscan.com/NM/bill/HB33/2026
+NM,2065659,,School Nurse Licensure Provisions,School Nurse Licensure Provisions,4,2026-03-06,https://legiscan.com/NM/bill/HB34/2026
+NM,2066365,,Lobbying Activity Reports,Lobbying Activity Reports,1,2026-01-20,https://legiscan.com/NM/bill/HB35/2026
+NM,2066280,,Accessibility Act & Office,Accessibility Act & Office,1,2026-01-20,https://legiscan.com/NM/bill/HB36/2026
+NM,2066336,,Man-made Water Infrastructure Failure,Man-made Water Infrastructure Failure,1,2026-01-20,https://legiscan.com/NM/bill/HB37/2026
+NM,2066308,,Wheelchair Insurance Coverage,Wheelchair Insurance Coverage,4,2026-03-06,https://legiscan.com/NM/bill/HB38/2026
+NM,2066221,,Crime Of Ticket Scalping,Crime Of Ticket Scalping,1,2026-01-20,https://legiscan.com/NM/bill/HB39/2026
+NM,2066248,,Temporary Erb Member Payment,Temporary Erb Member Payment,1,2026-01-20,https://legiscan.com/NM/bill/HB40/2026
+NM,2066164,,Temporary Pera Member Payment,Temporary Pera Member Payment,1,2026-01-20,https://legiscan.com/NM/bill/HB41/2026
+NM,2086178,,Frozen Food For Certain Communities,Frozen Food For Certain Communities,1,2026-01-20,https://legiscan.com/NM/bill/HB42/2026
+NM,2066134,,Disability & Survivor Pensions Changes,Disability & Survivor Pensions Changes,4,2026-03-03,https://legiscan.com/NM/bill/HB43/2026
+NM,2068023,,Dental & Dental Hygienist Compact,Dental & Dental Hygienist Compact,1,2026-01-20,https://legiscan.com/NM/bill/HB44/2026
+NM,2068022,,Physician Assistant Licensure Compact,Physician Assistant Licensure Compact,1,2026-01-20,https://legiscan.com/NM/bill/HB45/2026
+NM,2068017,,Crime Of Digital Sabotage Of A Business,Crime Of Digital Sabotage Of A Business,1,2026-01-20,https://legiscan.com/NM/bill/HB46/2026
+NM,2068018,,School Employee Insurance Programs,School Employee Insurance Programs,4,2026-03-09,https://legiscan.com/NM/bill/HB47/2026
+NM,2068020,,Nm Tech Seismology Equipment,Nm Tech Seismology Equipment,1,2026-01-20,https://legiscan.com/NM/bill/HB48/2026
+NM,2068019,,Increase Felon Firearm Penalty,Increase Felon Firearm Penalty,2,2026-02-10,https://legiscan.com/NM/bill/HB49/2026
+NM,2068883,,Social Work Licensure Interstate Compact,Social Work Licensure Interstate Compact,4,2026-02-09,https://legiscan.com/NM/bill/HB50/2026
+NM,2070102,,Spay & Neuter Fee Delayed Repeal,Spay & Neuter Fee Delayed Repeal,1,2026-01-20,https://legiscan.com/NM/bill/HB51/2026
+NM,2070130,,Criminal Competency Statute Cross References,Criminal Competency Statute Cross References,1,2026-01-20,https://legiscan.com/NM/bill/HB52/2026
+NM,2069937,,Nm Ireland Trade Commission,Nm Ireland Trade Commission,1,2026-01-20,https://legiscan.com/NM/bill/HB53/2026
+NM,2070118,,Protests On Water Replacement Wells,Protests On Water Replacement Wells,1,2026-01-20,https://legiscan.com/NM/bill/HB54/2026
+NM,2070088,,1st Responder Retirement Tax Deduction,1st Responder Retirement Tax Deduction,1,2026-01-20,https://legiscan.com/NM/bill/HB55/2026
+NM,2070061,,Veteran Behavioral Health Services,Veteran Behavioral Health Services,1,2026-01-20,https://legiscan.com/NM/bill/HB56/2026
+NM,2070075,,Traffic Offense Video Testimony,Traffic Offense Video Testimony,1,2026-01-20,https://legiscan.com/NM/bill/HB57/2026
+NM,2069980,,Telephone Crimes,Telephone Crimes,1,2026-01-20,https://legiscan.com/NM/bill/HB58/2026
+NM,2070047,,Increase Penalty For Certain Deaths,Increase Penalty For Certain Deaths,1,2026-01-20,https://legiscan.com/NM/bill/HB59/2026
+NM,2070141,,Revise Certain Criminal Offense Definitions,Revise Certain Criminal Offense Definitions,2,2026-02-11,https://legiscan.com/NM/bill/HB60/2026
+NM,2069964,,Aggravated Battery On Police Officer,Aggravated Battery On Police Officer,4,2026-03-03,https://legiscan.com/NM/bill/HB61/2026
+NM,2070035,,Rename & Create Geothermal Tax Credits,Rename & Create Geothermal Tax Credits,1,2026-01-20,https://legiscan.com/NM/bill/HB62/2026
+NM,2070020,,Nmfa Water Project Fund Projects,Nmfa Water Project Fund Projects,4,2026-03-05,https://legiscan.com/NM/bill/HB63/2026
+NM,2070006,,Public Project Revolving Fund Appropriations,Public Project Revolving Fund Appropriations,4,2026-03-03,https://legiscan.com/NM/bill/HB64/2026
+NM,2069992,,Cyfd Short-term Stabilization Pilot Pgm,Cyfd Short-term Stabilization Pilot Pgm,2,2026-02-14,https://legiscan.com/NM/bill/HB65/2026
+NM,2069949,,Health Care Professional Loan Fund Changes,Health Care Professional Loan Fund Changes,4,2026-03-06,https://legiscan.com/NM/bill/HB66/2026
+NM,2072569,,Restraining Orders & Firearms,Restraining Orders & Firearms,1,2026-01-20,https://legiscan.com/NM/bill/HB67/2026
+NM,2073783,,Health Care Recruitment Program Funding,Health Care Recruitment Program Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB68/2026
+NM,2073639,,Childhood Sexual Abuse Statute Of Limitations,Childhood Sexual Abuse Statute Of Limitations,1,2026-01-20,https://legiscan.com/NM/bill/HB69/2026
+NM,2073494,,Prc Support Agency,Prc Support Agency,4,2026-03-10,https://legiscan.com/NM/bill/HB70/2026
+NM,2079196,,County & Municipality Ordinance Enforcement,County & Municipality Ordinance Enforcement,1,2026-01-20,https://legiscan.com/NM/bill/HB71/2026
+NM,2078719,,Controlled Substance Minor Distribution,Controlled Substance Minor Distribution,1,2026-01-20,https://legiscan.com/NM/bill/HB72/2026
+NM,2078248,,Sentence Deferment For Repeat Offender,Sentence Deferment For Repeat Offender,1,2026-01-20,https://legiscan.com/NM/bill/HB73/2026
+NM,2080215,,Habitual Offender Statute Of Limitations,Habitual Offender Statute Of Limitations,1,2026-01-20,https://legiscan.com/NM/bill/HB74/2026
+NM,2080340,,Alteration Of Sentence Based On Circumstances,Alteration Of Sentence Based On Circumstances,1,2026-01-20,https://legiscan.com/NM/bill/HB75/2026
+NM,2080278,,Alternative Placement Of Youth In Custody,Alternative Placement Of Youth In Custody,1,2026-01-20,https://legiscan.com/NM/bill/HB76/2026
+NM,2079788,,Affordable Housing Revitalization Tax Credit,Affordable Housing Revitalization Tax Credit,1,2026-01-20,https://legiscan.com/NM/bill/HB77/2026
+NM,2079911,,Sealed Juvenile Record References,Sealed Juvenile Record References,1,2026-01-20,https://legiscan.com/NM/bill/HB78/2026
+NM,2079730,,Evidence In Probation Revocation,Evidence In Probation Revocation,1,2026-01-20,https://legiscan.com/NM/bill/HB79/2026
+NM,2080097,,Oil & Gas Conservation Tax Act Changes,Oil & Gas Conservation Tax Act Changes,4,2026-03-09,https://legiscan.com/NM/bill/HB80/2026
+NM,2080031,,Permitless Carry Of Firearms,Permitless Carry Of Firearms,1,2026-01-20,https://legiscan.com/NM/bill/HB81/2026
+NM,2079850,,Extend Technology Readiness Grt Credit,Extend Technology Readiness Grt Credit,1,2026-01-20,https://legiscan.com/NM/bill/HB82/2026
+NM,2083139,,Personal Care Services Medicaid Reimbursement,Personal Care Services Medicaid Reimbursement,1,2026-01-20,https://legiscan.com/NM/bill/HB83/2026
+NM,2082916,,Exposure To Certain Drugs As Child Abuse,Exposure To Certain Drugs As Child Abuse,1,2026-01-20,https://legiscan.com/NM/bill/HB84/2026
+NM,2083357,,Medical Provider Loan-for-service Pgms,Medical Provider Loan-for-service Pgms,1,2026-01-20,https://legiscan.com/NM/bill/HB85/2026
+NM,2082695,,"Children, Youth And Families Commission","Children, Youth And Families Commission",1,2026-01-20,https://legiscan.com/NM/bill/HB86/2026
+NM,2083029,,Soteria Model Residential Treatment Funding,Soteria Model Residential Treatment Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB87/2026
+NM,2082805,,Land Grant-merced Assistance Fund Changes,Land Grant-merced Assistance Fund Changes,2,2026-02-12,https://legiscan.com/NM/bill/HB88/2026
+NM,2085152,,Computer Science Teacher Licensure,Computer Science Teacher Licensure,1,2026-01-20,https://legiscan.com/NM/bill/HB89/2026
+NM,2085115,,Health Care Preceptor Income Tax Credit,Health Care Preceptor Income Tax Credit,1,2026-01-20,https://legiscan.com/NM/bill/HB90/2026
+NM,2085121,,Change In Cause Of Death Disclosure Exception,Change In Cause Of Death Disclosure Exception,1,2026-01-20,https://legiscan.com/NM/bill/HB91/2026
+NM,2085208,,Senior Income Tax Deduction,Senior Income Tax Deduction,1,2026-01-20,https://legiscan.com/NM/bill/HB92/2026
+NM,2085169,,Standard Income Tax Deduction Increase,Standard Income Tax Deduction Increase,1,2026-01-20,https://legiscan.com/NM/bill/HB93/2026
+NM,2085133,,Board Of Optometry Powers And Duties,Board Of Optometry Powers And Duties,1,2026-01-20,https://legiscan.com/NM/bill/HB94/2026
+NM,2085183,,Additional Second Judicial District Judgeship,Additional Second Judicial District Judgeship,4,2026-03-04,https://legiscan.com/NM/bill/HB95/2026
+NM,2085110,,Space Commission Working Group,Space Commission Working Group,5,2026-02-19,https://legiscan.com/NM/bill/HB96/2026
+NM,2085092,,Shaken Baby Syndrome Prevention Funding,Shaken Baby Syndrome Prevention Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB97/2026
+NM,2085098,,State Employee Salary & Retention Changes,State Employee Salary & Retention Changes,1,2026-01-20,https://legiscan.com/NM/bill/HB98/2026
+NM,2085103,,Medical Malpractice Changes,Medical Malpractice Changes,4,2026-03-06,https://legiscan.com/NM/bill/HB99/2026
+NM,2091327,,Stem Innovation Network Funding,Stem Innovation Network Funding,1,2026-01-22,https://legiscan.com/NM/bill/HB100/2026
+NM,2085202,,Regional Farm To Food Bank Funding,Regional Farm To Food Bank Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB101/2026
+NM,2085178,,Legislative Compensation,Legislative Compensation,1,2026-01-20,https://legiscan.com/NM/bill/HB102/2026
+NM,2085082,,Cap Residential Property Tax Rates,Cap Residential Property Tax Rates,2,2026-02-11,https://legiscan.com/NM/bill/HB103/2026
+NM,2085158,,County & Tribal Health Councils Act Funding,County & Tribal Health Councils Act Funding,1,2026-01-20,https://legiscan.com/NM/bill/HB104/2026
+NM,2085126,,Child Offender Commitment Extensions,Child Offender Commitment Extensions,1,2026-01-20,https://legiscan.com/NM/bill/HB105/2026
+NM,2085193,,Home-based Child Care Income Tax Credit,Home-based Child Care Income Tax Credit,1,2026-01-20,https://legiscan.com/NM/bill/HB106/2026
+NM,2085188,,Medical Malpractice Claim Changes,Medical Malpractice Claim Changes,1,2026-01-20,https://legiscan.com/NM/bill/HB107/2026
+NM,2085173,,Watershed District Taxes And Directors,Watershed District Taxes And Directors,4,2026-03-04,https://legiscan.com/NM/bill/HB108/2026
+NM,2085162,,Water Project Fund Changes,Water Project Fund Changes,4,2026-03-04,https://legiscan.com/NM/bill/HB109/2026
+NM,2085146,,Housing Development Data Reporting,Housing Development Data Reporting,1,2026-01-20,https://legiscan.com/NM/bill/HB110/2026
+NM,2091248,,Water Law Violation Maximum Penalty,Water Law Violation Maximum Penalty,4,2026-03-04,https://legiscan.com/NM/bill/HB111/2026
+NM,2091264,,Daylight Saving Time Year-round,Daylight Saving Time Year-round,1,2026-01-22,https://legiscan.com/NM/bill/HB112/2026
+NM,2091213,,Renewable Energy Production Tax Act,Renewable Energy Production Tax Act,1,2026-01-22,https://legiscan.com/NM/bill/HB113/2026
+NM,2091370,,Expand Double Up Food Bucks Pgm,Expand Double Up Food Bucks Pgm,1,2026-01-22,https://legiscan.com/NM/bill/HB114/2026
+NM,2091336,,Protections For Nurses Invoking Safe Harbor,Protections For Nurses Invoking Safe Harbor,1,2026-01-22,https://legiscan.com/NM/bill/HB115/2026
+NM,2091281,,Bilingual Multicultural Education Act Changes,Bilingual Multicultural Education Act Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB116/2026
+NM,2091355,,Higher Ed Demographic Data Reporting,Higher Ed Demographic Data Reporting,1,2026-01-22,https://legiscan.com/NM/bill/HB117/2026
+NM,2091381,,Biliteracy Development And Training Project,Biliteracy Development And Training Project,1,2026-01-22,https://legiscan.com/NM/bill/HB118/2026
+NM,2091235,,Bilingual License Endorsement Pgm Units,Bilingual License Endorsement Pgm Units,1,2026-01-22,https://legiscan.com/NM/bill/HB119/2026
+NM,2091302,,Limiting Student Restraint & Seclusion,Limiting Student Restraint & Seclusion,2,2026-02-11,https://legiscan.com/NM/bill/HB120/2026
+NM,2091239,,State Investment Officer And Fund Changes,State Investment Officer And Fund Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB121/2026
+NM,2091372,,Expand Limitation On Municipal Annexation,Expand Limitation On Municipal Annexation,1,2026-01-22,https://legiscan.com/NM/bill/HB122/2026
+NM,2091224,,State And Fed School Grant Pgms,State And Fed School Grant Pgms,1,2026-01-22,https://legiscan.com/NM/bill/HB123/2026
+NM,2091263,,New Americans Division In Wsd,New Americans Division In Wsd,4,2026-03-09,https://legiscan.com/NM/bill/HB124/2026
+NM,2091338,,Delinquency Act Changes,Delinquency Act Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB125/2026
+NM,2091243,,Prohibit Nondisclosure & Nondisparagement,Prohibit Nondisclosure & Nondisparagement,1,2026-01-22,https://legiscan.com/NM/bill/HB126/2026
+NM,2091241,,Medical Board Expedited Licensure,Medical Board Expedited Licensure,2,2026-02-11,https://legiscan.com/NM/bill/HB127/2026
+NM,2091279,,Firefighter Occupational Disease Disablement,Firefighter Occupational Disease Disablement,4,2026-03-05,https://legiscan.com/NM/bill/HB128/2026
+NM,2091309,,Health Care Provider Coverage,Health Care Provider Coverage,1,2026-01-22,https://legiscan.com/NM/bill/HB129/2026
+NM,2091205,,Cyfd Domestic Violence Pgms Funding,Cyfd Domestic Violence Pgms Funding,1,2026-01-22,https://legiscan.com/NM/bill/HB130/2026
+NM,2091294,,Planning Bureau In Edd,Planning Bureau In Edd,1,2026-01-22,https://legiscan.com/NM/bill/HB131/2026
+NM,2091377,,Police Officer Workers Comp Conditions,Police Officer Workers Comp Conditions,2,2026-02-17,https://legiscan.com/NM/bill/HB132/2026
+NM,2091246,,General Appropriation Act Of 2026,General Appropriation Act Of 2026,1,2026-01-22,https://legiscan.com/NM/bill/HB133/2026
+NM,2091283,,Unlawful Install Of Gps System,Unlawful Install Of Gps System,1,2026-01-22,https://legiscan.com/NM/bill/HB134/2026
+NM,2091275,,Election Nominating Petition Changes,Election Nominating Petition Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB135/2026
+NM,2091329,,Health Insurance Credentialing,Health Insurance Credentialing,1,2026-01-22,https://legiscan.com/NM/bill/HB136/2026
+NM,2091296,,Stocking Of Certain Drugs In Pharmacies,Stocking Of Certain Drugs In Pharmacies,1,2026-01-22,https://legiscan.com/NM/bill/HB137/2026
+NM,2091387,,Zoning Lot Size Requirements,Zoning Lot Size Requirements,1,2026-01-22,https://legiscan.com/NM/bill/HB138/2026
+NM,2091203,,Nm Housing Trust Fund,Nm Housing Trust Fund,1,2026-01-22,https://legiscan.com/NM/bill/HB139/2026
+NM,2091383,,Affordable Housing Act Oversight Duties,Affordable Housing Act Oversight Duties,1,2026-01-22,https://legiscan.com/NM/bill/HB140/2026
+NM,2091366,,Artificial Intelligence Accountability Act,Artificial Intelligence Accountability Act,1,2026-01-22,https://legiscan.com/NM/bill/HB141/2026
+NM,2091218,,Rural Health Care Tax Credit Changes,Rural Health Care Tax Credit Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB142/2026
+NM,2091268,,Health Care Changes,Health Care Changes,1,2026-01-22,https://legiscan.com/NM/bill/HB143/2026
+NM,2091307,,Crime Of Unlawful Squatting,Crime Of Unlawful Squatting,1,2026-01-22,https://legiscan.com/NM/bill/HB144/2026
+NM,2091326,,High-wage Job Tax Credit Dates,High-wage Job Tax Credit Dates,1,2026-01-22,https://legiscan.com/NM/bill/HB145/2026
+NM,2091250,,Felon In Possession Of Firearm Penalty,Felon In Possession Of Firearm Penalty,1,2026-01-22,https://legiscan.com/NM/bill/HB146/2026
+NM,2091318,,Posting Of Notices Of Human Trafficking,Posting Of Notices Of Human Trafficking,1,2026-01-22,https://legiscan.com/NM/bill/HB147/2026
+NM,2093751,,Property Tax Affidavits,Property Tax Affidavits,1,2026-01-26,https://legiscan.com/NM/bill/HB148/2026
+NM,2093731,,Charter Schools & Nmfa,Charter Schools & Nmfa,1,2026-01-26,https://legiscan.com/NM/bill/HB149/2026
+NM,2093711,,Supervision Of Physician Assistants,Supervision Of Physician Assistants,1,2026-01-26,https://legiscan.com/NM/bill/HB150/2026
+NM,2093847,,Childhood Sexual Abuse Statute Of Limitations,Childhood Sexual Abuse Statute Of Limitations,1,2026-01-26,https://legiscan.com/NM/bill/HB151/2026
+NM,2093708,,Environmental Product Declaration Act,Environmental Product Declaration Act,1,2026-01-26,https://legiscan.com/NM/bill/HB152/2026
+NM,2093853,,Low-carbon Construction Material Rebate Act,Low-carbon Construction Material Rebate Act,5,2026-02-18,https://legiscan.com/NM/bill/HB153/2026
+NM,2093800,,Advanced Energy Product Definition,Advanced Energy Product Definition,4,2026-03-03,https://legiscan.com/NM/bill/HB154/2026
+NM,2093741,,"Fireworks Bans, Violations & Fines","Fireworks Bans, Violations & Fines",1,2026-01-26,https://legiscan.com/NM/bill/HB155/2026
+NM,2093670,,Repeal Special Session Vaccination Laws,Repeal Special Session Vaccination Laws,4,2026-03-06,https://legiscan.com/NM/bill/HB156/2026
+NM,2093728,,Pregnancy & Parenting Resource Website,Pregnancy & Parenting Resource Website,1,2026-01-26,https://legiscan.com/NM/bill/HB157/2026
+NM,2093744,,Plans On Use Of Certain Funds,Plans On Use Of Certain Funds,4,2026-03-04,https://legiscan.com/NM/bill/HB158/2026
+NM,2093734,,K-12 Student Mental Health Platform,K-12 Student Mental Health Platform,1,2026-01-26,https://legiscan.com/NM/bill/HB159/2026
+NM,2093647,,Create All Cities & Counties Fund,Create All Cities & Counties Fund,1,2026-01-26,https://legiscan.com/NM/bill/HB160/2026
+NM,2093825,,Change K-12 Program Unit Calculation,Change K-12 Program Unit Calculation,1,2026-01-26,https://legiscan.com/NM/bill/HB161/2026
+NM,2093693,,Motor Vehicle Crimes & Penalties,Motor Vehicle Crimes & Penalties,1,2026-01-26,https://legiscan.com/NM/bill/HB162/2026
+NM,2093788,,Denial Of Bail For Certain Offenses,Denial Of Bail For Certain Offenses,1,2026-01-26,https://legiscan.com/NM/bill/HB163/2026
+NM,2093811,,Lobbying Activity Reports,Lobbying Activity Reports,1,2026-01-26,https://legiscan.com/NM/bill/HB164/2026
+NM,2093657,,Payment Of Certain Irb Special Assessments,Payment Of Certain Irb Special Assessments,4,2026-03-03,https://legiscan.com/NM/bill/HB165/2026
+NM,2093705,,Limit Restrictions On Certain Fences,Limit Restrictions On Certain Fences,2,2026-02-13,https://legiscan.com/NM/bill/HB166/2026
+NM,2093761,,Notice Of Sale Of Mobile Home Parks,Notice Of Sale Of Mobile Home Parks,1,2026-01-26,https://legiscan.com/NM/bill/HB167/2026
+NM,2093641,,New Homes For New Mexico Program,New Homes For New Mexico Program,1,2026-01-26,https://legiscan.com/NM/bill/HB168/2026
+NM,2094807,,Unm Dept. Of Chicana & Chicano Studies,Unm Dept. Of Chicana & Chicano Studies,1,2026-01-27,https://legiscan.com/NM/bill/HB169/2026
+NM,2094856,,Unm Basic Needs Project,Unm Basic Needs Project,1,2026-01-27,https://legiscan.com/NM/bill/HB170/2026
+NM,2094836,,Wildfire Fund Act,Wildfire Fund Act,1,2026-01-27,https://legiscan.com/NM/bill/HB171/2026
+NM,2094750,,Safe Staffing Act & Nursing Homes,Safe Staffing Act & Nursing Homes,1,2026-01-27,https://legiscan.com/NM/bill/HB172/2026
+NM,2094965,,Dementia Care Specialist Program,Dementia Care Specialist Program,1,2026-01-27,https://legiscan.com/NM/bill/HB173/2026
+NM,2094881,,Chatbot Safety Act,Chatbot Safety Act,1,2026-01-27,https://legiscan.com/NM/bill/HB174/2026
+NM,2094986,,Reporting On School Bus Data,Reporting On School Bus Data,1,2026-01-27,https://legiscan.com/NM/bill/HB175/2026
+NM,2094954,,Create Zero Interest Down Payment Loan Fund,Create Zero Interest Down Payment Loan Fund,1,2026-01-27,https://legiscan.com/NM/bill/HB176/2026
+NM,2094821,,Veteran Service Animal Services & Shelter,Veteran Service Animal Services & Shelter,1,2026-01-27,https://legiscan.com/NM/bill/HB177/2026
+NM,2094859,,Sun Shades For Rural Parks & Recreation,Sun Shades For Rural Parks & Recreation,1,2026-01-27,https://legiscan.com/NM/bill/HB178/2026
+NM,2094743,,Sealed Juvenile Record & Pretrial Detention,Sealed Juvenile Record & Pretrial Detention,1,2026-01-27,https://legiscan.com/NM/bill/HB179/2026
+NM,2094968,,Use Of Emergency Funds & Disasters,Use Of Emergency Funds & Disasters,5,2026-02-19,https://legiscan.com/NM/bill/HB180/2026
+NM,2095008,,Reporting On Children Staying In Cyfd Offices,Reporting On Children Staying In Cyfd Offices,1,2026-01-27,https://legiscan.com/NM/bill/HB181/2026
+NM,2094864,,Violation Of Curfew As Delinquent Act,Violation Of Curfew As Delinquent Act,1,2026-01-27,https://legiscan.com/NM/bill/HB182/2026
+NM,2094760,,Statewide Drinking Water Needs,Statewide Drinking Water Needs,1,2026-01-27,https://legiscan.com/NM/bill/HB183/2026
+NM,2094810,,Investment Of Conservation & Legacy Funds,Investment Of Conservation & Legacy Funds,4,2026-03-05,https://legiscan.com/NM/bill/HB184/2026
+NM,2094780,,Ped Secretary & Local School Board Members,Ped Secretary & Local School Board Members,1,2026-01-27,https://legiscan.com/NM/bill/HB185/2026
+NM,2094935,,Tax Credit For Conveyance Of Property,Tax Credit For Conveyance Of Property,1,2026-01-27,https://legiscan.com/NM/bill/HB186/2026
+NM,2094916,,Rural Hospital Malpractice Liability Ins. Act,Rural Hospital Malpractice Liability Ins. Act,1,2026-01-27,https://legiscan.com/NM/bill/HB187/2026
+NM,2094915,,Removal Of Hazards On Roads,Removal Of Hazards On Roads,1,2026-01-27,https://legiscan.com/NM/bill/HB188/2026
+NM,2094800,,Cyfd Support & Services To Lgbtq+ Families,Cyfd Support & Services To Lgbtq+ Families,1,2026-01-27,https://legiscan.com/NM/bill/HB189/2026
+NM,2094764,,Homelessness Services For Lgbtq+,Homelessness Services For Lgbtq+,1,2026-01-27,https://legiscan.com/NM/bill/HB190/2026
+NM,2094992,,Ped Services For Lgbtq+,Ped Services For Lgbtq+,1,2026-01-27,https://legiscan.com/NM/bill/HB191/2026
+NM,2094929,,No Foreign Corporation Purchase Of Homes,No Foreign Corporation Purchase Of Homes,1,2026-01-27,https://legiscan.com/NM/bill/HB192/2026
+NM,2094890,,Scholarships For Private Ed & Tax Credits,Scholarships For Private Ed & Tax Credits,1,2026-01-27,https://legiscan.com/NM/bill/HB193/2026
+NM,2094874,,Expand Metro Redevelopment Code & Projects,Expand Metro Redevelopment Code & Projects,1,2026-01-27,https://legiscan.com/NM/bill/HB194/2026
+NM,2094756,,Collection Of Medical Malpractice Judgements,Collection Of Medical Malpractice Judgements,2,2026-02-16,https://legiscan.com/NM/bill/HB195/2026
+NM,2100420,,Penalty For Receiving Stolen Firearm,Penalty For Receiving Stolen Firearm,1,2026-01-28,https://legiscan.com/NM/bill/HB196/2026
+NM,2100400,,Increase Penalty For Larceny Of Firearm,Increase Penalty For Larceny Of Firearm,1,2026-01-28,https://legiscan.com/NM/bill/HB197/2026
+NM,2100839,,Behavioral Health & First Responder Training,Behavioral Health & First Responder Training,1,2026-01-28,https://legiscan.com/NM/bill/HB198/2026
+NM,2100379,,Sex Offender Registration & Federal Law,Sex Offender Registration & Federal Law,1,2026-01-28,https://legiscan.com/NM/bill/HB199/2026
+NM,2100560,,New Homes For New Mexico Program,New Homes For New Mexico Program,4,2026-03-05,https://legiscan.com/NM/bill/HB200/2026
+NM,2100740,,Ipra Task Force Funding,Ipra Task Force Funding,1,2026-01-28,https://legiscan.com/NM/bill/HB201/2026
+NM,2100581,,Child Advocate Office Data Sharing,Child Advocate Office Data Sharing,1,2026-01-28,https://legiscan.com/NM/bill/HB202/2026
+NM,2100801,,Spaceport Authority Board Members,Spaceport Authority Board Members,1,2026-01-28,https://legiscan.com/NM/bill/HB203/2026
+NM,2100440,,Wildfire Risk Insurance Models & Underwriting,Wildfire Risk Insurance Models & Underwriting,1,2026-01-28,https://legiscan.com/NM/bill/HB204/2026
+NM,2100662,,School Teacher Professional Development,School Teacher Professional Development,1,2026-01-28,https://legiscan.com/NM/bill/HB205/2026
+NM,2100680,,Crime Victim Reparation Additional Crimes,Crime Victim Reparation Additional Crimes,2,2026-02-15,https://legiscan.com/NM/bill/HB206/2026
+NM,2100301,,Water Quality Commission Produced Water Rules,Water Quality Commission Produced Water Rules,1,2026-01-28,https://legiscan.com/NM/bill/HB207/2026
+NM,2094945,,Law Enforcement Id And Concealing Identity,Law Enforcement Id And Concealing Identity,1,2026-01-27,https://legiscan.com/NM/bill/HB208/2026
+NM,2100817,,Firefighter No-cost Cancer Screening,Firefighter No-cost Cancer Screening,1,2026-01-28,https://legiscan.com/NM/bill/HB209/2026
+NM,2100457,,Health Info Exchange Info Sharing,Health Info Exchange Info Sharing,1,2026-01-28,https://legiscan.com/NM/bill/HB210/2026
+NM,2100482,,Speech-language Pathology License,Speech-language Pathology License,1,2026-01-28,https://legiscan.com/NM/bill/HB211/2026
+NM,2100931,,Voice & Visual Likeness Rights Act,Voice & Visual Likeness Rights Act,1,2026-01-28,https://legiscan.com/NM/bill/HB212/2026
+NM,2100897,,Expand Optometry Act,Expand Optometry Act,2,2026-02-14,https://legiscan.com/NM/bill/HB213/2026
+NM,2102086,,Consumer Information And Data Protection Act,Consumer Information And Data Protection Act,1,2026-01-29,https://legiscan.com/NM/bill/HB214/2026
+NM,2102242,,Off-highway Vehicle Operating Authorization,Off-highway Vehicle Operating Authorization,1,2026-01-29,https://legiscan.com/NM/bill/HB215/2026
+NM,2102214,,Off-highway Motor Vehicle Act Changes,Off-highway Motor Vehicle Act Changes,1,2026-01-29,https://legiscan.com/NM/bill/HB216/2026
+NM,2102114,,Western Nm University Digitization Funding,Western Nm University Digitization Funding,1,2026-01-29,https://legiscan.com/NM/bill/HB217/2026
+NM,2101989,,Attendance For Success Act Enforcement,Attendance For Success Act Enforcement,1,2026-01-29,https://legiscan.com/NM/bill/HB218/2026
+NM,2102265,,Attendance For Success Act Changes,Attendance For Success Act Changes,1,2026-01-29,https://legiscan.com/NM/bill/HB219/2026
+NM,2102040,,Time Of Sale Or Transfer For Delinquent Taxes,Time Of Sale Or Transfer For Delinquent Taxes,1,2026-01-29,https://legiscan.com/NM/bill/HB220/2026
+NM,2102144,,Armed Forces Retirement Pay Tax Exemption,Armed Forces Retirement Pay Tax Exemption,1,2026-01-29,https://legiscan.com/NM/bill/HB221/2026
+NM,2102167,,Voter Identification Requirements,Voter Identification Requirements,1,2026-01-29,https://legiscan.com/NM/bill/HB222/2026
+NM,2102004,,Litigation Financing Transparency Act,Litigation Financing Transparency Act,1,2026-01-29,https://legiscan.com/NM/bill/HB223/2026
+NM,2102015,,Medical Care Expenses Tax Deduction,Medical Care Expenses Tax Deduction,1,2026-01-29,https://legiscan.com/NM/bill/HB224/2026
+NM,2102044,,Eib & Sale Of Zero-emission Vehicles,Eib & Sale Of Zero-emission Vehicles,1,2026-01-29,https://legiscan.com/NM/bill/HB225/2026
+NM,2102096,,Natural Gas As Renewable Energy,Natural Gas As Renewable Energy,1,2026-01-29,https://legiscan.com/NM/bill/HB226/2026
+NM,2102155,,Clean Transportation Fuel Repeals,Clean Transportation Fuel Repeals,1,2026-01-29,https://legiscan.com/NM/bill/HB227/2026
+NM,2102235,,Firearms & Trafficking Controlled Substances,Firearms & Trafficking Controlled Substances,1,2026-01-29,https://legiscan.com/NM/bill/HB228/2026
+NM,2102201,,Transparency In Government Contracting,Transparency In Government Contracting,1,2026-01-29,https://legiscan.com/NM/bill/HB229/2026
+NM,2102158,,Interim Admin. Rules Oversight Committee,Interim Admin. Rules Oversight Committee,1,2026-01-29,https://legiscan.com/NM/bill/HB230/2026
+NM,2102108,,Rulemaking Info To Legislators,Rulemaking Info To Legislators,1,2026-01-29,https://legiscan.com/NM/bill/HB231/2026
+NM,2102279,,Gun Storage Tax Credit,Gun Storage Tax Credit,1,2026-01-29,https://legiscan.com/NM/bill/HB232/2026
+NM,2102139,,Protection Of Women's Sports Act,Protection Of Women's Sports Act,1,2026-01-29,https://legiscan.com/NM/bill/HB233/2026
+NM,2102247,,Definition Of Fentanyl,Definition Of Fentanyl,2,2026-02-16,https://legiscan.com/NM/bill/HB234/2026
+NM,2102149,,Sudden Unexpected Young Person Death Reports,Sudden Unexpected Young Person Death Reports,1,2026-01-29,https://legiscan.com/NM/bill/HB235/2026
+NM,2102062,,Unm Pathways Statewide Collaborative Program,Unm Pathways Statewide Collaborative Program,1,2026-01-29,https://legiscan.com/NM/bill/HB236/2026
+NM,2102273,,Small Business Disaster Relief Program,Small Business Disaster Relief Program,1,2026-01-29,https://legiscan.com/NM/bill/HB237/2026
+NM,2102231,,Independent Theater Sponsorship Program,Independent Theater Sponsorship Program,1,2026-01-29,https://legiscan.com/NM/bill/HB238/2026
+NM,2102125,,Tribal Infrastructure Project Obligation,Tribal Infrastructure Project Obligation,1,2026-01-29,https://legiscan.com/NM/bill/HB239/2026
+NM,2102207,,Education Opportunity Account Act,Education Opportunity Account Act,1,2026-01-29,https://legiscan.com/NM/bill/HB240/2026
+NM,2102259,,Medical Malpractice Court Notices,Medical Malpractice Court Notices,1,2026-01-29,https://legiscan.com/NM/bill/HB241/2026
+NM,2102066,,Cost-of-living Adjustment For Retirees,Cost-of-living Adjustment For Retirees,1,2026-01-29,https://legiscan.com/NM/bill/HB242/2026
+NM,2102032,,Equine Shelter Fund & Trust Fund,Equine Shelter Fund & Trust Fund,1,2026-01-29,https://legiscan.com/NM/bill/HB243/2026
+NM,2101997,,Hospital Price Transparency Act,Hospital Price Transparency Act,1,2026-01-29,https://legiscan.com/NM/bill/HB244/2026
+NM,2102197,,Denial Of Enrollment To School,Denial Of Enrollment To School,1,2026-01-29,https://legiscan.com/NM/bill/HB245/2026
+NM,2103278,,Matching Funds For Floodplain Land Rehab,Matching Funds For Floodplain Land Rehab,1,2026-01-30,https://legiscan.com/NM/bill/HB246/2026
+NM,2103207,,Capital Outlay Changes,Capital Outlay Changes,4,2026-03-09,https://legiscan.com/NM/bill/HB247/2026
+NM,2103141,,General Obligation Bonds,General Obligation Bonds,4,2026-03-10,https://legiscan.com/NM/bill/HB248/2026
+NM,2103217,,Electronic Medical Records Tax Credit,Electronic Medical Records Tax Credit,1,2026-01-30,https://legiscan.com/NM/bill/HB249/2026
+NM,2103231,,Tech & Innovation Network Advisory Board,Tech & Innovation Network Advisory Board,1,2026-01-30,https://legiscan.com/NM/bill/HB250/2026
+NM,2103131,,New Homes Development Program,New Homes Development Program,1,2026-01-30,https://legiscan.com/NM/bill/HB251/2026
+NM,2103089,,Transfer Athletic Commission Authority,Transfer Athletic Commission Authority,1,2026-01-30,https://legiscan.com/NM/bill/HB252/2026
+NM,2103103,,Public Education Changes,Public Education Changes,4,2026-02-25,https://legiscan.com/NM/bill/HB253/2026
+NM,2103085,,Avoided Gasses In Prc Cost Test,Avoided Gasses In Prc Cost Test,2,2026-02-14,https://legiscan.com/NM/bill/HB254/2026
+NM,2103183,,Public Safety Workforce Building Program,Public Safety Workforce Building Program,4,2026-03-03,https://legiscan.com/NM/bill/HB255/2026
+NM,2103245,,Defibrillators At School Athletic Events,Defibrillators At School Athletic Events,4,2026-03-10,https://legiscan.com/NM/bill/HB256/2026
+NM,2103094,,Vagus Nerve Stimulation Reimbursement,Vagus Nerve Stimulation Reimbursement,1,2026-01-30,https://legiscan.com/NM/bill/HB257/2026
+NM,2103203,,Dental Hygienists In Dental Health Act,Dental Hygienists In Dental Health Act,1,2026-01-30,https://legiscan.com/NM/bill/HB258/2026
+NM,2103160,,Actuarial Review Of Health Legislation,Actuarial Review Of Health Legislation,1,2026-01-30,https://legiscan.com/NM/bill/HB259/2026
+NM,2103240,,Crime Of False Statement To Legislature,Crime Of False Statement To Legislature,1,2026-01-30,https://legiscan.com/NM/bill/HB260/2026
+NM,2103155,,School Activity Buses,School Activity Buses,1,2026-01-30,https://legiscan.com/NM/bill/HB261/2026
+NM,2103145,,School Transport Emergency Fund Uses,School Transport Emergency Fund Uses,1,2026-01-30,https://legiscan.com/NM/bill/HB262/2026
+NM,2103178,,School Math & Science Changes,School Math & Science Changes,1,2026-01-30,https://legiscan.com/NM/bill/HB263/2026
+NM,2103254,,Various Income Tax Deductions,Various Income Tax Deductions,1,2026-01-30,https://legiscan.com/NM/bill/HB264/2026
+NM,2103108,,Taxpayer Dividend Income Tax Rebate Fund,Taxpayer Dividend Income Tax Rebate Fund,1,2026-01-30,https://legiscan.com/NM/bill/HB265/2026
+NM,2103268,,Penalty For Sexual Exploitation Of Children,Penalty For Sexual Exploitation Of Children,1,2026-01-30,https://legiscan.com/NM/bill/HB266/2026
+NM,2103264,,Wildfire Utility Mitigation & Liability Act,Wildfire Utility Mitigation & Liability Act,1,2026-01-30,https://legiscan.com/NM/bill/HB267/2026
+NM,2103236,,Land Grant & Acequia Museum,Land Grant & Acequia Museum,1,2026-01-30,https://legiscan.com/NM/bill/HB268/2026
+NM,2103791,,Childcare Program Use Of Funds,Childcare Program Use Of Funds,1,2026-02-02,https://legiscan.com/NM/bill/HB269/2026
+NM,2103802,,Contributions To Apprentice & Training Pgms.,Contributions To Apprentice & Training Pgms.,4,2026-03-04,https://legiscan.com/NM/bill/HB270/2026
+NM,2106555,,Office Of Natural Resources Trustee Funding,Office Of Natural Resources Trustee Funding,1,2026-02-03,https://legiscan.com/NM/bill/HB271/2026
+NM,2103781,,Crime Of Deed Theft,Crime Of Deed Theft,1,2026-02-02,https://legiscan.com/NM/bill/HB272/2026
+NM,2103955,,Women's Safety & Protection Act,Women's Safety & Protection Act,1,2026-02-02,https://legiscan.com/NM/bill/HB273/2026
+NM,2103979,,Nonconforming Mobile Home Park Lots,Nonconforming Mobile Home Park Lots,1,2026-02-02,https://legiscan.com/NM/bill/HB274/2026
+NM,2104203,,Gila Regional Cancer Center Bonds,Gila Regional Cancer Center Bonds,1,2026-02-02,https://legiscan.com/NM/bill/HB275/2026
+NM,2104061,,Nm Winemaking Industry,Nm Winemaking Industry,1,2026-02-02,https://legiscan.com/NM/bill/HB276/2026
+NM,2103860,,Scope Of Practice Advisory Committee,Scope Of Practice Advisory Committee,1,2026-02-02,https://legiscan.com/NM/bill/HB277/2026
+NM,2104165,,Toxicology Reimbursement Requirements,Toxicology Reimbursement Requirements,1,2026-02-02,https://legiscan.com/NM/bill/HB278/2026
+NM,2104237,,Healthcare Privacy & Safety Protections,Healthcare Privacy & Safety Protections,1,2026-02-02,https://legiscan.com/NM/bill/HB279/2026
+NM,2104128,,Youth Internship Pilot Project,Youth Internship Pilot Project,1,2026-02-02,https://legiscan.com/NM/bill/HB280/2026
+NM,2104192,,Financial Assurance For Solar & Wind,Financial Assurance For Solar & Wind,1,2026-02-02,https://legiscan.com/NM/bill/HB281/2026
+NM,2104024,,School & Juvenile Probation Cooperation,School & Juvenile Probation Cooperation,1,2026-02-02,https://legiscan.com/NM/bill/HB282/2026
+NM,2104094,,Use Of Cannabis In Health Care Facilities,Use Of Cannabis In Health Care Facilities,1,2026-02-02,https://legiscan.com/NM/bill/HB283/2026
+NM,2104071,,Create Office Of Energy Info,Create Office Of Energy Info,1,2026-02-02,https://legiscan.com/NM/bill/HB284/2026
+NM,2104260,,Disabled Veteran Property Tax Changes,Disabled Veteran Property Tax Changes,4,2026-02-25,https://legiscan.com/NM/bill/HB285/2026
+NM,2103908,,Electric Vehicle Weight Allowance,Electric Vehicle Weight Allowance,1,2026-02-02,https://legiscan.com/NM/bill/HB286/2026
+NM,2103966,,Permanent Health & Human Services Committee,Permanent Health & Human Services Committee,2,2026-02-16,https://legiscan.com/NM/bill/HB287/2026
+NM,2103933,,Nm Historic Women Marker Program,Nm Historic Women Marker Program,1,2026-02-02,https://legiscan.com/NM/bill/HB288/2026
+NM,2104014,,School Transportation Funding,School Transportation Funding,1,2026-02-02,https://legiscan.com/NM/bill/HB289/2026
+NM,2106447,,Metro Redev Project Property Tax Exemption,Metro Redev Project Property Tax Exemption,1,2026-02-03,https://legiscan.com/NM/bill/HB290/2026
+NM,2108074,,Tax Changes,Tax Changes,4,2026-03-04,https://legiscan.com/NM/bill/HB291/2026
+NM,2103222,,Nm Prison Rape Elimination Act,Nm Prison Rape Elimination Act,1,2026-01-30,https://legiscan.com/NM/bill/HB292/2026
+NM,2106473,,Ececd Investigation Team,Ececd Investigation Team,1,2026-02-03,https://legiscan.com/NM/bill/HB293/2026
+NM,2106497,,Cannabis Product Packaging Regulations,Cannabis Product Packaging Regulations,1,2026-02-03,https://legiscan.com/NM/bill/HB294/2026
+NM,2106367,,Accessibility Act,Accessibility Act,2,2026-02-13,https://legiscan.com/NM/bill/HB295/2026
+NM,2106570,,Increase Working Family Tax Credit,Increase Working Family Tax Credit,1,2026-02-03,https://legiscan.com/NM/bill/HB296/2026
+NM,2106610,,Unm Project Echo,Unm Project Echo,1,2026-02-03,https://legiscan.com/NM/bill/HB297/2026
+NM,2106462,,Rail Infrastructure Tax Credit,Rail Infrastructure Tax Credit,1,2026-02-03,https://legiscan.com/NM/bill/HB298/2026
+NM,2106524,,Highway 180 Road Project,Highway 180 Road Project,1,2026-02-03,https://legiscan.com/NM/bill/HB299/2026
+NM,2106595,,Care & Management Of Horses,Care & Management Of Horses,1,2026-02-03,https://legiscan.com/NM/bill/HB300/2026
+NM,2106421,,Judicial Branch Info Tech Projects,Judicial Branch Info Tech Projects,1,2026-02-03,https://legiscan.com/NM/bill/HB301/2026
+NM,2106435,,Insurance Prior Authorization Exemptions,Insurance Prior Authorization Exemptions,1,2026-02-03,https://legiscan.com/NM/bill/HB302/2026
+NM,2106372,,Utility Certificate Of Public Convenience,Utility Certificate Of Public Convenience,2,2026-02-16,https://legiscan.com/NM/bill/HB303/2026
+NM,2106488,,Payments For Child Care Or Pre-k,Payments For Child Care Or Pre-k,1,2026-02-03,https://legiscan.com/NM/bill/HB304/2026
+NM,2108128,,Study Publicly Owned Electric Utility,Study Publicly Owned Electric Utility,1,2026-02-04,https://legiscan.com/NM/bill/HB305/2026
+NM,2108254,,Prohibit Certain Health Care Facility Fees,Prohibit Certain Health Care Facility Fees,4,2026-03-06,https://legiscan.com/NM/bill/HB306/2026
+NM,2108256,,Advertisement For Certain Legal Money Amounts,Advertisement For Certain Legal Money Amounts,1,2026-02-04,https://legiscan.com/NM/bill/HB307/2026
+NM,2108238,,Substitute Care Advisory Council Changes,Substitute Care Advisory Council Changes,1,2026-02-04,https://legiscan.com/NM/bill/HB308/2026
+NM,2108061,,Valuation Of Energy Storage Property,Valuation Of Energy Storage Property,2,2026-02-15,https://legiscan.com/NM/bill/HB309/2026
+NM,2108090,,Study Lowrider Museum,Study Lowrider Museum,1,2026-02-04,https://legiscan.com/NM/bill/HB310/2026
+NM,2108234,,Virtual Power Plant Act,Virtual Power Plant Act,1,2026-02-04,https://legiscan.com/NM/bill/HB311/2026
+NM,2108118,,Chemical Castration For Sex Offenders,Chemical Castration For Sex Offenders,1,2026-02-04,https://legiscan.com/NM/bill/HB312/2026
+NM,2108191,,Civil Relief From Coerced Debt Act,Civil Relief From Coerced Debt Act,1,2026-02-04,https://legiscan.com/NM/bill/HB313/2026
+NM,2108075,,Zero-interest Loans For Flood Damage,Zero-interest Loans For Flood Damage,1,2026-02-04,https://legiscan.com/NM/bill/HB314/2026
+NM,2108060,,Free-roaming Horse Management,Free-roaming Horse Management,1,2026-02-04,https://legiscan.com/NM/bill/HB315/2026
+NM,2108153,,Rural Hospital Malpractice Liability,Rural Hospital Malpractice Liability,1,2026-02-04,https://legiscan.com/NM/bill/HB316/2026
+NM,2108089,,Motor Vehicle Special Permit Review Board,Motor Vehicle Special Permit Review Board,1,2026-02-04,https://legiscan.com/NM/bill/HB317/2026
+NM,2108158,,Cause Of Action For Rights Infringement,Cause Of Action For Rights Infringement,1,2026-02-04,https://legiscan.com/NM/bill/HB318/2026
+NM,2108177,,Solid Waste Surcharge,Solid Waste Surcharge,1,2026-02-04,https://legiscan.com/NM/bill/HB319/2026
+NM,2108073,,Industrial Carbon Reduction Act,Industrial Carbon Reduction Act,1,2026-02-04,https://legiscan.com/NM/bill/HB320/2026
+NM,2108199,,Medical Services & Economic Development,Medical Services & Economic Development,1,2026-02-04,https://legiscan.com/NM/bill/HB321/2026
+NM,2108218,,Transportation Trust Fund & Program Fund,Transportation Trust Fund & Program Fund,1,2026-02-04,https://legiscan.com/NM/bill/HB322/2026
+NM,2108065,,Access To Affordable Broadband,Access To Affordable Broadband,1,2026-02-04,https://legiscan.com/NM/bill/HB323/2026
+NM,2108116,,School District Firearm Safety Training,School District Firearm Safety Training,1,2026-02-04,https://legiscan.com/NM/bill/HB324/2026
+NM,2108040,,Create Railyard Crossing Safety Fund,Create Railyard Crossing Safety Fund,1,2026-02-04,https://legiscan.com/NM/bill/HB325/2026
+NM,2108064,,Produced Water Facility Insurance,Produced Water Facility Insurance,1,2026-02-04,https://legiscan.com/NM/bill/HB326/2026
+NM,2108258,,Time Period For Produced Water Well Decisions,Time Period For Produced Water Well Decisions,1,2026-02-04,https://legiscan.com/NM/bill/HB327/2026
+NM,2108124,,State Funds For Concealed Id Law Enforcement,State Funds For Concealed Id Law Enforcement,1,2026-02-04,https://legiscan.com/NM/bill/HB328/2026
+NM,2108076,,Energy Affordability & Grid Reliability,Energy Affordability & Grid Reliability,1,2026-02-04,https://legiscan.com/NM/bill/HB329/2026
+NM,2108223,,Ai Ethics As School Science Elective,Ai Ethics As School Science Elective,1,2026-02-04,https://legiscan.com/NM/bill/HB330/2026
+NM,2108266,,Criminal Record Expungement Changes,Criminal Record Expungement Changes,1,2026-02-04,https://legiscan.com/NM/bill/HB331/2026
+NM,2108273,,Capital Outlay Reauthorizations,Capital Outlay Reauthorizations,4,2026-03-11,https://legiscan.com/NM/bill/HB332/2026
+NM,2108103,,Tort Actions For Libel & Slander,Tort Actions For Libel & Slander,1,2026-02-04,https://legiscan.com/NM/bill/HB333/2026
+NM,2108165,,Competency Of Children,Competency Of Children,1,2026-02-04,https://legiscan.com/NM/bill/HB334/2026
+NM,2108157,,Confidential Student Athlete Nil Info,Confidential Student Athlete Nil Info,1,2026-02-04,https://legiscan.com/NM/bill/HB335/2026
+NM,2108059,,Use Of Fda-approved Psilocybin,Use Of Fda-approved Psilocybin,1,2026-02-04,https://legiscan.com/NM/bill/HB336/2026
+NM,2108239,,Consideration Of Rps In Grid Modernization,Consideration Of Rps In Grid Modernization,1,2026-02-04,https://legiscan.com/NM/bill/HB337/2026
+NM,2108209,,Health Practitioner Grt Deduction Sunset,Health Practitioner Grt Deduction Sunset,1,2026-02-04,https://legiscan.com/NM/bill/HB338/2026
+NM,2108050,,Juvenile Justice Changes,Juvenile Justice Changes,1,2026-02-04,https://legiscan.com/NM/bill/HB339/2026
+NM,2108120,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB340/2026
+NM,2108189,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB341/2026
+NM,2108267,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB342/2026
+NM,2108221,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB343/2026
+NM,2108184,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB344/2026
+NM,2108144,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB345/2026
+NM,2108270,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB346/2026
+NM,2108113,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB347/2026
+NM,2108098,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB348/2026
+NM,2108154,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB349/2026
+NM,2108070,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB350/2026
+NM,2108244,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB351/2026
+NM,2108227,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB352/2026
+NM,2108080,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB353/2026
+NM,2108187,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB354/2026
+NM,2108214,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB355/2026
+NM,2108105,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB356/2026
+NM,2108251,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB357/2026
+NM,2108146,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB358/2026
+NM,2108197,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB359/2026
+NM,2108193,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB360/2026
+NM,2108100,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB361/2026
+NM,2108110,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB362/2026
+NM,2108095,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB363/2026
+NM,2108178,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB364/2026
+NM,2108047,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB365/2026
+NM,2108243,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB366/2026
+NM,2108163,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB367/2026
+NM,2108129,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB368/2026
+NM,2108202,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB369/2026
+NM,2108086,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB370/2026
+NM,2108261,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - Land Grant-merced & Acequia Infrastructure",2,2026-02-15,https://legiscan.com/NM/bill/HB371/2026
+NM,2108181,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB372/2026
+NM,2108093,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB373/2026
+NM,2108041,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB374/2026
+NM,2108246,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB375/2026
+NM,2108139,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB376/2026
+NM,2108081,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB377/2026
+NM,2108135,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/HB378/2026
+NM,2091266,,House Investigatory Subcommittee,House Investigatory Subcommittee,4,2026-02-16,https://legiscan.com/NM/bill/HR1/2026
+NM,2065641,,"Boards Of Regents Nominating Committees, Ca","Boards Of Regents Nominating Committees, Ca",4,2026-02-17,https://legiscan.com/NM/bill/HJR1/2026
+NM,2080401,,"Denial Of Bail, Ca","Denial Of Bail, Ca",1,2026-01-20,https://legiscan.com/NM/bill/HJR2/2026
+NM,2080156,,"Environmental Rights, Ca","Environmental Rights, Ca",1,2026-01-20,https://legiscan.com/NM/bill/HJR3/2026
+NM,2086234,,"Cyfd Commission, Ca","Cyfd Commission, Ca",1,2026-01-20,https://legiscan.com/NM/bill/HJR4/2026
+NM,2085198,,"Legislative Compensation, Ca","Legislative Compensation, Ca",4,2026-02-17,https://legiscan.com/NM/bill/HJR5/2026
+NM,2091228,,"Session Length And Bill Consideration, Ca","Session Length And Bill Consideration, Ca",2,2026-02-13,https://legiscan.com/NM/bill/HJR6/2026
+NM,2091351,,"Consideration Of Bills In All Sessions, Ca","Consideration Of Bills In All Sessions, Ca",2,2026-02-10,https://legiscan.com/NM/bill/HJR7/2026
+NM,2094786,,"Property Tax Refund For Nuisance Laws, Ca","Property Tax Refund For Nuisance Laws, Ca",1,2026-01-27,https://legiscan.com/NM/bill/HJR8/2026
+NM,2102082,,Constitutional Convention,Constitutional Convention,1,2026-01-29,https://legiscan.com/NM/bill/HJR9/2026
+NM,2102223,,"Secession Of Counties From Nm, Ca","Secession Of Counties From Nm, Ca",1,2026-01-29,https://legiscan.com/NM/bill/HJR10/2026
+NM,2102270,,"Interim Admin. Rule Oversight Committee, Ca","Interim Admin. Rule Oversight Committee, Ca",1,2026-01-29,https://legiscan.com/NM/bill/HJR11/2026
+NM,2106548,,Constitutional Convention,Constitutional Convention,1,2026-02-03,https://legiscan.com/NM/bill/HJR12/2026
+NM,2064982,,Study Cyfd As Independent Executive Dept,Study Cyfd As Independent Executive Dept,1,2026-01-20,https://legiscan.com/NM/bill/HM1/2026
+NM,2065567,,Study Screen Use In Elementary Classrooms,Study Screen Use In Elementary Classrooms,4,2026-02-19,https://legiscan.com/NM/bill/HM2/2026
+NM,2066189,,Honoring Nurses And Health Care Workers,Honoring Nurses And Health Care Workers,4,2026-02-14,https://legiscan.com/NM/bill/HM3/2026
+NM,2079971,,Study Higher Ed Health Insurance Costs,Study Higher Ed Health Insurance Costs,4,2026-02-19,https://legiscan.com/NM/bill/HM4/2026
+NM,2085139,,"""new Mexico Mesa Day""","""new Mexico Mesa Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM5/2026
+NM,2085087,,Private Equity Infrastructure Ownership,Private Equity Infrastructure Ownership,1,2026-01-20,https://legiscan.com/NM/bill/HM6/2026
+NM,2095002,,Study State Gov't Work Without Benefits,Study State Gov't Work Without Benefits,1,2026-01-27,https://legiscan.com/NM/bill/HM7/2026
+NM,2094840,,"Reverend Doctor Martin Luther King, Jr.","Reverend Doctor Martin Luther King, Jr.",4,2026-02-10,https://legiscan.com/NM/bill/HM8/2026
+NM,2087585,,Mexico-new Mexico Advocacy Day,Mexico-new Mexico Advocacy Day,4,2026-02-10,https://legiscan.com/NM/bill/HM9/2026
+NM,2094897,,Review Human Sexuality Ed. Standards,Review Human Sexuality Ed. Standards,1,2026-01-27,https://legiscan.com/NM/bill/HM10/2026
+NM,2094817,,"""nm Speech-language & Hearing Assoc. Day""","""nm Speech-language & Hearing Assoc. Day""",4,2026-02-19,https://legiscan.com/NM/bill/HM11/2026
+NM,2094910,,"""better Hearing & Speech Month""","""better Hearing & Speech Month""",1,2026-01-27,https://legiscan.com/NM/bill/HM12/2026
+NM,2094985,,10-year Criminal Justice Plan,10-year Criminal Justice Plan,4,2026-02-19,https://legiscan.com/NM/bill/HM13/2026
+NM,2094934,,"""new Mexico Trio Programs Day""","""new Mexico Trio Programs Day""",4,2026-02-19,https://legiscan.com/NM/bill/HM14/2026
+NM,2094996,,"""gallup/ Mckinley County Day""","""gallup/ Mckinley County Day""",4,2026-02-14,https://legiscan.com/NM/bill/HM15/2026
+NM,2094889,,"Nmsu Physical Science Lab, In Recognition","Nmsu Physical Science Lab, In Recognition",4,2026-02-19,https://legiscan.com/NM/bill/HM16/2026
+NM,2094919,,Tv & Film Industry Task Force,Tv & Film Industry Task Force,4,2026-02-19,https://legiscan.com/NM/bill/HM17/2026
+NM,2094976,,"""nm National Board-certified Teacher Day""","""nm National Board-certified Teacher Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM18/2026
+NM,2093814,,"""nm Aviation & Aerospace Day""","""nm Aviation & Aerospace Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM19/2026
+NM,2094942,,Renewable Energy Infrastructure Study Group,Renewable Energy Infrastructure Study Group,4,2026-02-19,https://legiscan.com/NM/bill/HM20/2026
+NM,2094776,,"""new Mexico Food & Farms Day""","""new Mexico Food & Farms Day""",4,2026-02-19,https://legiscan.com/NM/bill/HM21/2026
+NM,2102092,,Flood Control District Benefits,Flood Control District Benefits,1,2026-01-29,https://legiscan.com/NM/bill/HM22/2026
+NM,2102027,,Study Motor Vehicle Inspection Program,Study Motor Vehicle Inspection Program,1,2026-01-29,https://legiscan.com/NM/bill/HM23/2026
+NM,2102020,,Study Restructuring Las Vegas Land Grant,Study Restructuring Las Vegas Land Grant,4,2026-02-19,https://legiscan.com/NM/bill/HM24/2026
+NM,2102219,,Victims Of Violent Crimes & Their Families,Victims Of Violent Crimes & Their Families,4,2026-02-10,https://legiscan.com/NM/bill/HM25/2026
+NM,2102171,,State Agency Insect Workshop,State Agency Insect Workshop,4,2026-02-19,https://legiscan.com/NM/bill/HM26/2026
+NM,2100723,,"""grant County Day""","""grant County Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM27/2026
+NM,2102282,,Advance Election For Ed. Freedom Tax Program,Advance Election For Ed. Freedom Tax Program,1,2026-01-29,https://legiscan.com/NM/bill/HM28/2026
+NM,2104303,,Condemning Invasion Of Venezuela,Condemning Invasion Of Venezuela,1,2026-02-02,https://legiscan.com/NM/bill/HM29/2026
+NM,2103761,,Public Education Governance Study,Public Education Governance Study,4,2026-02-19,https://legiscan.com/NM/bill/HM30/2026
+NM,2104033,,Home Health Service Distance Limitations,Home Health Service Distance Limitations,4,2026-02-19,https://legiscan.com/NM/bill/HM31/2026
+NM,2104152,,Address Forced Sterilization Policy,Address Forced Sterilization Policy,1,2026-02-02,https://legiscan.com/NM/bill/HM32/2026
+NM,2104004,,Study Parenting Students In Nm Higher Ed,Study Parenting Students In Nm Higher Ed,1,2026-02-02,https://legiscan.com/NM/bill/HM33/2026
+NM,2104082,,International Year Of The Woman Farmer,International Year Of The Woman Farmer,4,2026-02-19,https://legiscan.com/NM/bill/HM34/2026
+NM,2104215,,Pediatric Palliative & Concurrent Care,Pediatric Palliative & Concurrent Care,4,2026-02-19,https://legiscan.com/NM/bill/HM35/2026
+NM,2104247,,Nursing Shortage Task Force,Nursing Shortage Task Force,4,2026-02-19,https://legiscan.com/NM/bill/HM36/2026
+NM,2103825,,Renewable Energy Facilities Decommission Cost,Renewable Energy Facilities Decommission Cost,1,2026-02-02,https://legiscan.com/NM/bill/HM37/2026
+NM,2104225,,Low-income Home Solar Generation Devices,Low-income Home Solar Generation Devices,1,2026-02-02,https://legiscan.com/NM/bill/HM38/2026
+NM,2103848,,Sexual Assault Examination Kits Task Force,Sexual Assault Examination Kits Task Force,1,2026-02-02,https://legiscan.com/NM/bill/HM39/2026
+NM,2103992,,"""mexican American Chicano Heritage Day""","""mexican American Chicano Heritage Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM40/2026
+NM,2106396,,Study Publicly Owned Utility,Study Publicly Owned Utility,1,2026-02-03,https://legiscan.com/NM/bill/HM41/2026
+NM,2106509,,Study Employment For Certain Employees,Study Employment For Certain Employees,1,2026-02-03,https://legiscan.com/NM/bill/HM42/2026
+NM,2106412,,Study Framework For Public School Rankings,Study Framework For Public School Rankings,1,2026-02-03,https://legiscan.com/NM/bill/HM43/2026
+NM,2106535,,Study Family Engagement Practices,Study Family Engagement Practices,1,2026-02-03,https://legiscan.com/NM/bill/HM44/2026
+NM,2106585,,Importance Of Water In Taos,Importance Of Water In Taos,1,2026-02-03,https://legiscan.com/NM/bill/HM45/2026
+NM,2106388,,Nm Military Museum & Hurley Family,Nm Military Museum & Hurley Family,4,2026-02-19,https://legiscan.com/NM/bill/HM46/2026
+NM,2109743,,Study Teacher Workloads,Study Teacher Workloads,4,2026-02-19,https://legiscan.com/NM/bill/HM47/2026
+NM,2108115,,"""valencia County Day""","""valencia County Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM48/2026
+NM,2108260,,"""unm Day""","""unm Day""",4,2026-02-10,https://legiscan.com/NM/bill/HM49/2026
+NM,2108242,,"""lincoln County Day""","""lincoln County Day""",4,2026-02-19,https://legiscan.com/NM/bill/HM50/2026
+NM,2109879,,Detention Center Employees Opportunities,Detention Center Employees Opportunities,1,2026-02-05,https://legiscan.com/NM/bill/HM51/2026
+NM,2109948,,Health Insurance Premium Affordability Group,Health Insurance Premium Affordability Group,1,2026-02-05,https://legiscan.com/NM/bill/HM52/2026
+NM,2109810,,"Study ""gifted-in-field"" Teacher Endorsement","Study ""gifted-in-field"" Teacher Endorsement",4,2026-02-19,https://legiscan.com/NM/bill/HM53/2026
+NM,2111483,,Mobile Home Parks Utilities Prc Working Group,Mobile Home Parks Utilities Prc Working Group,4,2026-02-19,https://legiscan.com/NM/bill/HM54/2026
+NM,2111340,,Radiation Exposure & Compensation,Radiation Exposure & Compensation,1,2026-02-06,https://legiscan.com/NM/bill/HM55/2026
+NM,2112286,,Study Transfering Ownership Of Orphaned Wells,Study Transfering Ownership Of Orphaned Wells,1,2026-02-09,https://legiscan.com/NM/bill/HM56/2026
+NM,2112318,,Bilingual Educator Credentialing,Bilingual Educator Credentialing,1,2026-02-09,https://legiscan.com/NM/bill/HM57/2026
+NM,2112350,,Study Public School Transportation Barriers,Study Public School Transportation Barriers,1,2026-02-09,https://legiscan.com/NM/bill/HM58/2026
+NM,2114668,,Study Fair Foster Parent Compensation,Study Fair Foster Parent Compensation,4,2026-02-19,https://legiscan.com/NM/bill/HM59/2026
+NM,2114647,,Study Use Of Buildings As Grid Asset,Study Use Of Buildings As Grid Asset,1,2026-02-11,https://legiscan.com/NM/bill/HM60/2026
+NM,2115809,,Study School Staff Compensation,Study School Staff Compensation,1,2026-02-12,https://legiscan.com/NM/bill/HM61/2026
+NM,2116073,,"Study Tax, Rentals, Infrastructure & Funding","Study Tax, Rentals, Infrastructure & Funding",1,2026-02-12,https://legiscan.com/NM/bill/HM62/2026
+NM,2117227,,Expand Chiropractic Scope Of Practice,Expand Chiropractic Scope Of Practice,1,2026-02-15,https://legiscan.com/NM/bill/HM63/2026
+NM,2117910,,Build Capacity For Capital Outlay Changes,Build Capacity For Capital Outlay Changes,1,2026-02-16,https://legiscan.com/NM/bill/HM64/2026
+NM,2117907,,Health & Firearm Safety Task Force,Health & Firearm Safety Task Force,1,2026-02-16,https://legiscan.com/NM/bill/HM65/2026
+NM,2118695,,Study Santa Teresa Border Crossing Fee,Study Santa Teresa Border Crossing Fee,4,2026-02-19,https://legiscan.com/NM/bill/HM66/2026
+NM,2064973,,Strengthening Relations With Taiwan,Strengthening Relations With Taiwan,1,2026-01-20,https://legiscan.com/NM/bill/HJM1/2026
+NM,2083249,,Ipra Implementation Study Task Force,Ipra Implementation Study Task Force,4,2026-02-19,https://legiscan.com/NM/bill/HJM2/2026
+NM,2102190,,Per- & Polyfluoroalkyl Substances Report,Per- & Polyfluoroalkyl Substances Report,4,2026-02-18,https://legiscan.com/NM/bill/HJM3/2026
+NM,2087489,,Interstate Medical Licensure Compact Act,Interstate Medical Licensure Compact Act,4,2026-02-05,https://legiscan.com/NM/bill/SB1/2026
+NM,2087577,,State Highway Project Bonds,State Highway Project Bonds,4,2026-02-05,https://legiscan.com/NM/bill/SB2/2026
+NM,2087526,,Commitment Procedure Changes & Definitions,Commitment Procedure Changes & Definitions,4,2026-03-06,https://legiscan.com/NM/bill/SB3/2026
+NM,2087519,,Medical Resident & Fellow Salaries,Medical Resident & Fellow Salaries,1,2026-01-20,https://legiscan.com/NM/bill/SB4/2026
+NM,2087475,,Expand Certain Physician Residencies,Expand Certain Physician Residencies,1,2026-01-20,https://legiscan.com/NM/bill/SB5/2026
+NM,2087469,,New School Of Medicine Facility,New School Of Medicine Facility,1,2026-01-20,https://legiscan.com/NM/bill/SB6/2026
+NM,2087498,,Increase Clinician Faculty Pay,Increase Clinician Faculty Pay,1,2026-01-20,https://legiscan.com/NM/bill/SB7/2026
+NM,2087504,,Behavioral Health Trust Fund,Behavioral Health Trust Fund,1,2026-01-20,https://legiscan.com/NM/bill/SB8/2026
+NM,2087534,,Medicaid Trust Fund,Medicaid Trust Fund,1,2026-01-20,https://legiscan.com/NM/bill/SB9/2026
+NM,2087461,,Health Training Corps,Health Training Corps,1,2026-01-20,https://legiscan.com/NM/bill/SB10/2026
+NM,2087599,,Nurse Loan Repayment Act,Nurse Loan Repayment Act,1,2026-01-20,https://legiscan.com/NM/bill/SB11/2026
+NM,2087455,,Physician Tax Credit,Physician Tax Credit,1,2026-01-20,https://legiscan.com/NM/bill/SB12/2026
+NM,2087512,,Health Care Gross Receipts Deduction,Health Care Gross Receipts Deduction,1,2026-01-20,https://legiscan.com/NM/bill/SB13/2026
+NM,2087555,,Health Professional Advisory Committee,Health Professional Advisory Committee,2,2026-02-11,https://legiscan.com/NM/bill/SB14/2026
+NM,2087562,,Health Care Provider Coverage,Health Care Provider Coverage,1,2026-01-20,https://legiscan.com/NM/bill/SB15/2026
+NM,2087548,,Health Professional Autonomy Act,Health Professional Autonomy Act,1,2026-01-20,https://legiscan.com/NM/bill/SB16/2026
+NM,2091322,,Stop Illegal Gun Trade Act,Stop Illegal Gun Trade Act,2,2026-02-07,https://legiscan.com/NM/bill/SB17/2026
+NM,2091359,,Clear Horizons & Emissions Codification,Clear Horizons & Emissions Codification,1,2026-01-22,https://legiscan.com/NM/bill/SB18/2026
+NM,2092668,,School Finance Unit Value Reset,School Finance Unit Value Reset,4,2026-01-31,https://legiscan.com/NM/bill/SB19/2026
+NM,2093660,,Prior Authorization & Prescription Drugs,Prior Authorization & Prescription Drugs,4,2026-03-06,https://legiscan.com/NM/bill/SB20/2026
+NM,2093716,,Medicare Supplement Open Enrollment,Medicare Supplement Open Enrollment,4,2026-03-03,https://legiscan.com/NM/bill/SB21/2026
+NM,2103943,,Motor Vehicle Manufacturers As Dealers,Motor Vehicle Manufacturers As Dealers,1,2026-02-02,https://legiscan.com/NM/bill/SB22/2026
+NM,2108036,,Exceptions To Student Use Of Phones,Exceptions To Student Use Of Phones,2,2026-02-15,https://legiscan.com/NM/bill/SB23/2026
+NM,2089286,,Math Requirements For Teaching License,Math Requirements For Teaching License,4,2026-03-09,https://legiscan.com/NM/bill/SB29/2026
+NM,2089103,,Reporting Of Induced Abortions,Reporting Of Induced Abortions,4,2026-03-06,https://legiscan.com/NM/bill/SB30/2026
+NM,2089390,,U Visa Certification Act,U Visa Certification Act,1,2026-01-21,https://legiscan.com/NM/bill/SB31/2026
+NM,2089143,,Prosecution Of Human Trafficking,Prosecution Of Human Trafficking,1,2026-01-21,https://legiscan.com/NM/bill/SB32/2026
+NM,2089427,,Right To Try Individualized Treatments Act,Right To Try Individualized Treatments Act,1,2026-01-21,https://legiscan.com/NM/bill/SB33/2026
+NM,2089015,,Publish Standards-based Assessment Info,Publish Standards-based Assessment Info,1,2026-01-21,https://legiscan.com/NM/bill/SB34/2026
+NM,2089213,,Create Addition 1st District Judgeship,Create Addition 1st District Judgeship,2,2026-02-10,https://legiscan.com/NM/bill/SB35/2026
+NM,2089478,,Quantum Facility Infrastructure Tax Credit,Quantum Facility Infrastructure Tax Credit,1,2026-01-21,https://legiscan.com/NM/bill/SB36/2026
+NM,2089000,,High Quality Literacy Instruction Act,High Quality Literacy Instruction Act,4,2026-03-09,https://legiscan.com/NM/bill/SB37/2026
+NM,2089248,,Fees On Registered Pet Food,Fees On Registered Pet Food,4,2026-03-05,https://legiscan.com/NM/bill/SB38/2026
+NM,2088969,,Microgrid Oversight Act,Microgrid Oversight Act,1,2026-01-21,https://legiscan.com/NM/bill/SB39/2026
+NM,2089371,,Driver Privacy And Safety Act,Driver Privacy And Safety Act,4,2026-03-04,https://legiscan.com/NM/bill/SB40/2026
+NM,2089509,,Statute Of Limitations For Certain Sex Crimes,Statute Of Limitations For Certain Sex Crimes,4,2026-03-04,https://legiscan.com/NM/bill/SB41/2026
+NM,2089195,,Taos Primary Health Building,Taos Primary Health Building,1,2026-01-21,https://legiscan.com/NM/bill/SB42/2026
+NM,2089034,,Parole Requirement Changes,Parole Requirement Changes,4,2026-03-04,https://legiscan.com/NM/bill/SB43/2026
+NM,2089340,,Nm Tech Board Monitoring Network,Nm Tech Board Monitoring Network,1,2026-01-21,https://legiscan.com/NM/bill/SB44/2026
+NM,2089050,,Academic Library Management Policies,Academic Library Management Policies,1,2026-01-21,https://legiscan.com/NM/bill/SB45/2026
+NM,2088983,,Explore Diversion Of Organic Waste,Explore Diversion Of Organic Waste,1,2026-01-21,https://legiscan.com/NM/bill/SB46/2026
+NM,2089085,,Food Recovery & Composting Act,Food Recovery & Composting Act,1,2026-01-21,https://legiscan.com/NM/bill/SB47/2026
+NM,2089266,,State Fairgrounds District Bonds,State Fairgrounds District Bonds,4,2026-03-05,https://legiscan.com/NM/bill/SB48/2026
+NM,2089409,,School-age Appropriate Filtering Project,School-age Appropriate Filtering Project,1,2026-01-21,https://legiscan.com/NM/bill/SB49/2026
+NM,2089494,,Law Enforcement Training Requirements,Law Enforcement Training Requirements,2,2026-02-11,https://legiscan.com/NM/bill/SB50/2026
+NM,2089125,,Wrongful Conviction Compensation Act,Wrongful Conviction Compensation Act,1,2026-01-21,https://legiscan.com/NM/bill/SB51/2026
+NM,2089461,,Pera Cost-of-living Adjustments,Pera Cost-of-living Adjustments,1,2026-01-21,https://legiscan.com/NM/bill/SB52/2026
+NM,2089069,,Community & Health Info Safety & Privacy Act,Community & Health Info Safety & Privacy Act,1,2026-01-21,https://legiscan.com/NM/bill/SB53/2026
+NM,2089324,,School Personnel Required Trainings,School Personnel Required Trainings,1,2026-01-21,https://legiscan.com/NM/bill/SB54/2026
+NM,2089302,,Solar Market Income Tax Credit,Solar Market Income Tax Credit,2,2026-02-05,https://legiscan.com/NM/bill/SB55/2026
+NM,2089157,,Create Child Welfare Authority,Create Child Welfare Authority,1,2026-01-21,https://legiscan.com/NM/bill/SB56/2026
+NM,2089441,,Concealing Identity Of A Peace Officer,Concealing Identity Of A Peace Officer,1,2026-01-21,https://legiscan.com/NM/bill/SB57/2026
+NM,2088954,,Extend Property Tax Exemption Period,Extend Property Tax Exemption Period,4,2026-03-04,https://legiscan.com/NM/bill/SB58/2026
+NM,2089230,,Land Grant-merced & Acequia Trust,Land Grant-merced & Acequia Trust,1,2026-01-21,https://legiscan.com/NM/bill/SB59/2026
+NM,2089176,,Tax Changes,Tax Changes,1,2026-01-21,https://legiscan.com/NM/bill/SB60/2026
+NM,2091320,,Rural Libraries,Rural Libraries,1,2026-01-22,https://legiscan.com/NM/bill/SB61/2026
+NM,2091256,,Rural Libraries Endowment Fund,Rural Libraries Endowment Fund,1,2026-01-22,https://legiscan.com/NM/bill/SB62/2026
+NM,2091237,,Animal Welfare Fund Spay & Neuter Subaccount,Animal Welfare Fund Spay & Neuter Subaccount,1,2026-01-22,https://legiscan.com/NM/bill/SB63/2026
+NM,2091287,,Create Office Of Special Education,Create Office Of Special Education,4,2026-03-09,https://legiscan.com/NM/bill/SB64/2026
+NM,2091233,,Management Of Public School Libraries,Management Of Public School Libraries,1,2026-01-22,https://legiscan.com/NM/bill/SB65/2026
+NM,2091285,,Abandoned Uranium Mine Cleanup,Abandoned Uranium Mine Cleanup,1,2026-01-22,https://legiscan.com/NM/bill/SB66/2026
+NM,2091220,,Best Interests Of The Child Standards,Best Interests Of The Child Standards,1,2026-01-22,https://legiscan.com/NM/bill/SB67/2026
+NM,2091342,,Artificial Intelligence Government Use Act,Artificial Intelligence Government Use Act,1,2026-01-22,https://legiscan.com/NM/bill/SB68/2026
+NM,2091207,,Front And Back License Plates,Front And Back License Plates,1,2026-01-22,https://legiscan.com/NM/bill/SB69/2026
+NM,2091353,,Universal Basic Income Pilot Project,Universal Basic Income Pilot Project,1,2026-01-22,https://legiscan.com/NM/bill/SB70/2026
+NM,2091300,,Pera Changes,Pera Changes,1,2026-01-22,https://legiscan.com/NM/bill/SB71/2026
+NM,2091215,,Former Legislators As Lobbyists,Former Legislators As Lobbyists,1,2026-01-22,https://legiscan.com/NM/bill/SB72/2026
+NM,2091226,,Driver's Ed Requirements,Driver's Ed Requirements,4,2026-03-09,https://legiscan.com/NM/bill/SB73/2026
+NM,2091313,,Cockfighting Penalties,Cockfighting Penalties,1,2026-01-22,https://legiscan.com/NM/bill/SB74/2026
+NM,2091357,,Fostering Connections Program Eligibility,Fostering Connections Program Eligibility,1,2026-01-22,https://legiscan.com/NM/bill/SB75/2026
+NM,2091254,,Expand Gas & Special Fuels Taxes,Expand Gas & Special Fuels Taxes,1,2026-01-22,https://legiscan.com/NM/bill/SB76/2026
+NM,2091298,,Apprentice & Training Program Contributions,Apprentice & Training Program Contributions,1,2026-01-22,https://legiscan.com/NM/bill/SB77/2026
+NM,2091347,,Nuclear Energy As Renewable Energy,Nuclear Energy As Renewable Energy,1,2026-01-22,https://legiscan.com/NM/bill/SB78/2026
+NM,2091270,,Mosquito Surveillance,Mosquito Surveillance,1,2026-01-22,https://legiscan.com/NM/bill/SB79/2026
+NM,2091374,,Domestic Abuse Definitions,Domestic Abuse Definitions,1,2026-01-22,https://legiscan.com/NM/bill/SB80/2026
+NM,2091315,,Primary Care Capital Funding Act,Primary Care Capital Funding Act,1,2026-01-22,https://legiscan.com/NM/bill/SB81/2026
+NM,2091222,,Unleaded Aviation Fuel Grant Program,Unleaded Aviation Fuel Grant Program,1,2026-01-22,https://legiscan.com/NM/bill/SB82/2026
+NM,2091211,,Accelerating Resilience Innovations Drylands,Accelerating Resilience Innovations Drylands,1,2026-01-22,https://legiscan.com/NM/bill/SB83/2026
+NM,2091362,,School Water Management Program,School Water Management Program,1,2026-01-22,https://legiscan.com/NM/bill/SB84/2026
+NM,2091349,,Amend Abuse & Neglect Act,Amend Abuse & Neglect Act,1,2026-01-22,https://legiscan.com/NM/bill/SB85/2026
+NM,2091258,,Harassment By Telephone,Harassment By Telephone,1,2026-01-22,https://legiscan.com/NM/bill/SB86/2026
+NM,2091364,,Opioid Addiction Prevention,Opioid Addiction Prevention,1,2026-01-22,https://legiscan.com/NM/bill/SB87/2026
+NM,2091231,,Foster Parent Tax Credit,Foster Parent Tax Credit,1,2026-01-22,https://legiscan.com/NM/bill/SB88/2026
+NM,2091252,,Tax Holiday For Hunting & Fishing Supplies,Tax Holiday For Hunting & Fishing Supplies,1,2026-01-22,https://legiscan.com/NM/bill/SB89/2026
+NM,2091331,,"""credible Threat"" Definition","""credible Threat"" Definition",1,2026-01-22,https://legiscan.com/NM/bill/SB90/2026
+NM,2091292,,Traffic Violation Penalties,Traffic Violation Penalties,1,2026-01-22,https://legiscan.com/NM/bill/SB91/2026
+NM,2091379,,Construction Materials Gross Receipts,Construction Materials Gross Receipts,1,2026-01-22,https://legiscan.com/NM/bill/SB92/2026
+NM,2091209,,Rail Infrastructure Tax Credit,Rail Infrastructure Tax Credit,1,2026-01-22,https://legiscan.com/NM/bill/SB93/2026
+NM,2091272,,Domestic Violence Offender Treatment Pgm.,Domestic Violence Offender Treatment Pgm.,1,2026-01-22,https://legiscan.com/NM/bill/SB94/2026
+NM,2091368,,Prohibit Antisemitic Discrimination,Prohibit Antisemitic Discrimination,1,2026-01-22,https://legiscan.com/NM/bill/SB95/2026
+NM,2091311,,Regulated Child Care Zoning Requirements,Regulated Child Care Zoning Requirements,4,2026-03-10,https://legiscan.com/NM/bill/SB96/2026
+NM,2091261,,"Tech ""qualified Expenditure""","Tech ""qualified Expenditure""",1,2026-01-22,https://legiscan.com/NM/bill/SB97/2026
+NM,2091290,,Exempt Jetty Jack From Cultural Property Act,Exempt Jetty Jack From Cultural Property Act,1,2026-01-22,https://legiscan.com/NM/bill/SB98/2026
+NM,2091334,,Rural Libraries Endowment Fund,Rural Libraries Endowment Fund,1,2026-01-22,https://legiscan.com/NM/bill/SB99/2026
+NM,2091277,,Burglary Definition Of Dwelling,Burglary Definition Of Dwelling,3,2026-02-19,https://legiscan.com/NM/bill/SB100/2026
+NM,2092555,,Health Care Delivery & Access Act Repeal,Health Care Delivery & Access Act Repeal,4,2026-03-06,https://legiscan.com/NM/bill/SB101/2026
+NM,2092588,,"""search & Rescue Dog"" Definition","""search & Rescue Dog"" Definition",1,2026-01-23,https://legiscan.com/NM/bill/SB102/2026
+NM,2092441,,Unlawful Interference With Aircraft,Unlawful Interference With Aircraft,1,2026-01-23,https://legiscan.com/NM/bill/SB103/2026
+NM,2092562,,Removal Of Wildlife Commission Members,Removal Of Wildlife Commission Members,3,2026-02-14,https://legiscan.com/NM/bill/SB104/2026
+NM,2092536,,Attendance For Success & Excused Absences,Attendance For Success & Excused Absences,1,2026-01-23,https://legiscan.com/NM/bill/SB105/2026
+NM,2092482,,Graduate Scholarship Act Funding,Graduate Scholarship Act Funding,1,2026-01-23,https://legiscan.com/NM/bill/SB106/2026
+NM,2092469,,Statewide Out-of-school Time Programming,Statewide Out-of-school Time Programming,1,2026-01-23,https://legiscan.com/NM/bill/SB107/2026
+NM,2092673,,Regional Farm To Food Bank Program,Regional Farm To Food Bank Program,1,2026-01-23,https://legiscan.com/NM/bill/SB108/2026
+NM,2092622,,Abandoned Utility Transition Cost Recovery,Abandoned Utility Transition Cost Recovery,1,2026-01-23,https://legiscan.com/NM/bill/SB109/2026
+NM,2092509,,Bosque Management Projects,Bosque Management Projects,1,2026-01-23,https://legiscan.com/NM/bill/SB110/2026
+NM,2092542,,"Motor Vehicle Code ""personal Info""","Motor Vehicle Code ""personal Info""",4,2026-03-03,https://legiscan.com/NM/bill/SB111/2026
+NM,2092595,,Severance Tax Fund Investment Classes,Severance Tax Fund Investment Classes,1,2026-01-23,https://legiscan.com/NM/bill/SB112/2026
+NM,2092489,,Agricultural Biomass Tax Credit Amounts,Agricultural Biomass Tax Credit Amounts,1,2026-01-23,https://legiscan.com/NM/bill/SB113/2026
+NM,2092628,,Investment Ownership Of Residential Property,Investment Ownership Of Residential Property,1,2026-01-23,https://legiscan.com/NM/bill/SB114/2026
+NM,2092637,,Franchise Termination Changes,Franchise Termination Changes,1,2026-01-23,https://legiscan.com/NM/bill/SB115/2026
+NM,2092459,,Uniformed Svc. Retirement Pay Tax Exemption,Uniformed Svc. Retirement Pay Tax Exemption,1,2026-01-23,https://legiscan.com/NM/bill/SB116/2026
+NM,2092433,,Uniformed Svc. Salary Tax Exemption,Uniformed Svc. Salary Tax Exemption,1,2026-01-23,https://legiscan.com/NM/bill/SB117/2026
+NM,2092529,,Back-to-school Tax Holiday Price Limits,Back-to-school Tax Holiday Price Limits,1,2026-01-23,https://legiscan.com/NM/bill/SB118/2026
+NM,2092523,,Create Demolition Fund,Create Demolition Fund,1,2026-01-23,https://legiscan.com/NM/bill/SB119/2026
+NM,2092447,,Local Journalist Employment Tax Credit,Local Journalist Employment Tax Credit,1,2026-01-23,https://legiscan.com/NM/bill/SB120/2026
+NM,2092428,,Increase Tobacco Products Tax,Increase Tobacco Products Tax,1,2026-01-23,https://legiscan.com/NM/bill/SB121/2026
+NM,2092650,,Private Drinking Water Well Owner Support,Private Drinking Water Well Owner Support,1,2026-01-23,https://legiscan.com/NM/bill/SB122/2026
+NM,2092568,,Defibrillators In Schools,Defibrillators In Schools,1,2026-01-23,https://legiscan.com/NM/bill/SB123/2026
+NM,2092642,,Higher Ed. Major Projects Fund,Higher Ed. Major Projects Fund,1,2026-01-23,https://legiscan.com/NM/bill/SB124/2026
+NM,2092497,,School Employee Insurance Contributions,School Employee Insurance Contributions,1,2026-01-23,https://legiscan.com/NM/bill/SB125/2026
+NM,2092663,,Guardian Ad Litem Capacity,Guardian Ad Litem Capacity,1,2026-01-23,https://legiscan.com/NM/bill/SB126/2026
+NM,2092600,,Homelessness Reduction Division,Homelessness Reduction Division,1,2026-01-23,https://legiscan.com/NM/bill/SB127/2026
+NM,2092609,,Public Land Disclosure & Accountability Act,Public Land Disclosure & Accountability Act,1,2026-01-23,https://legiscan.com/NM/bill/SB128/2026
+NM,2092656,,Adverse Employment Action & Cannabis,Adverse Employment Action & Cannabis,1,2026-01-23,https://legiscan.com/NM/bill/SB129/2026
+NM,2092502,,No Cost-sharing Of Certain Drugs,No Cost-sharing Of Certain Drugs,1,2026-01-23,https://legiscan.com/NM/bill/SB130/2026
+NM,2092474,,Residential Apartments In Commercial Zones,Residential Apartments In Commercial Zones,1,2026-01-23,https://legiscan.com/NM/bill/SB131/2026
+NM,2093616,,Doit Software Replacement Plan & Funding,Doit Software Replacement Plan & Funding,4,2026-03-03,https://legiscan.com/NM/bill/SB132/2026
+NM,2093797,,Health Equipment Grt Deduction,Health Equipment Grt Deduction,1,2026-01-26,https://legiscan.com/NM/bill/SB133/2026
+NM,2093615,,Permanent Health & Human Services Committee,Permanent Health & Human Services Committee,1,2026-01-26,https://legiscan.com/NM/bill/SB134/2026
+NM,2093833,,Revise Lfc Membership,Revise Lfc Membership,1,2026-01-26,https://legiscan.com/NM/bill/SB135/2026
+NM,2093699,,Unlawful Use Of Unmanned Aircraft,Unlawful Use Of Unmanned Aircraft,1,2026-01-26,https://legiscan.com/NM/bill/SB136/2026
+NM,2093624,,Snap Eligibility Based On Tanf Eligibility,Snap Eligibility Based On Tanf Eligibility,1,2026-01-26,https://legiscan.com/NM/bill/SB137/2026
+NM,2093843,,Repeal Rent Control Prohibition,Repeal Rent Control Prohibition,1,2026-01-26,https://legiscan.com/NM/bill/SB138/2026
+NM,2093634,,Commission On Status Of Women Funding,Commission On Status Of Women Funding,1,2026-01-26,https://legiscan.com/NM/bill/SB139/2026
+NM,2093650,,Medicaid Personal Care Svc. Reimbursement,Medicaid Personal Care Svc. Reimbursement,1,2026-01-26,https://legiscan.com/NM/bill/SB140/2026
+NM,2093837,,Student Eligibility For Extracurriculars,Student Eligibility For Extracurriculars,1,2026-01-26,https://legiscan.com/NM/bill/SB141/2026
+NM,2093637,,Severance Bonds For Ed. Technology,Severance Bonds For Ed. Technology,1,2026-01-26,https://legiscan.com/NM/bill/SB142/2026
+NM,2093777,,Update Certain Agricultural Fees,Update Certain Agricultural Fees,4,2026-03-03,https://legiscan.com/NM/bill/SB143/2026
+NM,2093720,,Repeal Special Zoning District Act,Repeal Special Zoning District Act,1,2026-01-26,https://legiscan.com/NM/bill/SB144/2026
+NM,2093627,,Audit Changes,Audit Changes,2,2026-02-13,https://legiscan.com/NM/bill/SB145/2026
+NM,2093785,,Civil Rights Act Claim Changes,Civil Rights Act Claim Changes,1,2026-01-26,https://legiscan.com/NM/bill/SB146/2026
+NM,2093684,,Juvenile Community Corrections Changes,Juvenile Community Corrections Changes,1,2026-01-26,https://legiscan.com/NM/bill/SB147/2026
+NM,2093767,,"""miguel Trujillo Day""","""miguel Trujillo Day""",1,2026-01-26,https://legiscan.com/NM/bill/SB148/2026
+NM,2093821,,Property Tax Code Definitions,Property Tax Code Definitions,1,2026-01-26,https://legiscan.com/NM/bill/SB149/2026
+NM,2093790,,Local News Printer Tax Credit,Local News Printer Tax Credit,1,2026-01-26,https://legiscan.com/NM/bill/SB150/2026
+NM,2093755,,Corporate Income Tax Changes,Corporate Income Tax Changes,4,2026-03-11,https://legiscan.com/NM/bill/SB151/2026
+NM,2093681,,Low-income Telecomm. Assistance Program,Low-income Telecomm. Assistance Program,4,2026-03-05,https://legiscan.com/NM/bill/SB152/2026
+NM,2093764,,Procurement Changes,Procurement Changes,1,2026-01-26,https://legiscan.com/NM/bill/SB153/2026
+NM,2093619,,Insurance Coverage For Wildfire & Floods,Insurance Coverage For Wildfire & Floods,1,2026-01-26,https://legiscan.com/NM/bill/SB154/2026
+NM,2093807,,Use Of Certain Proper Names By State,Use Of Certain Proper Names By State,1,2026-01-26,https://legiscan.com/NM/bill/SB155/2026
+NM,2093774,,Social Security Income Tax Cap,Social Security Income Tax Cap,1,2026-01-26,https://legiscan.com/NM/bill/SB156/2026
+NM,2093687,,Use Of Portable Solar Generation Devices,Use Of Portable Solar Generation Devices,1,2026-01-26,https://legiscan.com/NM/bill/SB157/2026
+NM,2094852,,Ped Micro-credentialing Pilot Project,Ped Micro-credentialing Pilot Project,1,2026-01-27,https://legiscan.com/NM/bill/SB158/2026
+NM,2094833,,Graduate Medical Education Entity Costs,Graduate Medical Education Entity Costs,1,2026-01-27,https://legiscan.com/NM/bill/SB159/2026
+NM,2094771,,Increase Alteration Of Firearm Crime Sentence,Increase Alteration Of Firearm Crime Sentence,1,2026-01-27,https://legiscan.com/NM/bill/SB160/2026
+NM,2094872,,Wildfire Mitigation & Liability Act,Wildfire Mitigation & Liability Act,1,2026-01-27,https://legiscan.com/NM/bill/SB161/2026
+NM,2094749,,Nonprofit Agreements With Dept. Of Defense,Nonprofit Agreements With Dept. Of Defense,1,2026-01-27,https://legiscan.com/NM/bill/SB162/2026
+NM,2094783,,Rename Geothermal Tax Credits,Rename Geothermal Tax Credits,1,2026-01-27,https://legiscan.com/NM/bill/SB163/2026
+NM,2095010,,Transfer Ambulance Standards To Doh,Transfer Ambulance Standards To Doh,1,2026-01-27,https://legiscan.com/NM/bill/SB164/2026
+NM,2094842,,Delinquency Act Changes,Delinquency Act Changes,1,2026-01-27,https://legiscan.com/NM/bill/SB165/2026
+NM,2094819,,Transfer From General Fund To Other Funds,Transfer From General Fund To Other Funds,1,2026-01-27,https://legiscan.com/NM/bill/SB166/2026
+NM,2094899,,Crime Of Deadly Weapon On School Premises,Crime Of Deadly Weapon On School Premises,1,2026-01-27,https://legiscan.com/NM/bill/SB167/2026
+NM,2095001,,Estancia Wind Turbine Blade Recycling,Estancia Wind Turbine Blade Recycling,1,2026-01-27,https://legiscan.com/NM/bill/SB168/2026
+NM,2100281,,Cost-of-living For Some Retirees,Cost-of-living For Some Retirees,1,2026-01-28,https://legiscan.com/NM/bill/SB169/2026
+NM,2100759,,Child Care Facility Donation Tax Credit,Child Care Facility Donation Tax Credit,1,2026-01-28,https://legiscan.com/NM/bill/SB170/2026
+NM,2100877,,Northern Nm State School Documentary,Northern Nm State School Documentary,1,2026-01-28,https://legiscan.com/NM/bill/SB171/2026
+NM,2100860,,Technology Readiness Grt Credit,Technology Readiness Grt Credit,2,2026-02-18,https://legiscan.com/NM/bill/SB172/2026
+NM,2100541,,Expand Medical Malpractice Insurance Types,Expand Medical Malpractice Insurance Types,1,2026-01-28,https://legiscan.com/NM/bill/SB173/2026
+NM,2100915,,Gold & Silver Sale Grt Deduction,Gold & Silver Sale Grt Deduction,1,2026-01-28,https://legiscan.com/NM/bill/SB174/2026
+NM,2100263,,Medical Malpractice Punitive Damages,Medical Malpractice Punitive Damages,1,2026-01-28,https://legiscan.com/NM/bill/SB175/2026
+NM,2100622,,Limit Spaceport Fees,Limit Spaceport Fees,1,2026-01-28,https://legiscan.com/NM/bill/SB176/2026
+NM,2100362,,General Fund Transfers To Other Funds,General Fund Transfers To Other Funds,1,2026-01-28,https://legiscan.com/NM/bill/SB177/2026
+NM,2100698,,School Finance Changes,School Finance Changes,1,2026-01-28,https://legiscan.com/NM/bill/SB178/2026
+NM,2100340,,Unm Medical Spanish Education Program,Unm Medical Spanish Education Program,1,2026-01-28,https://legiscan.com/NM/bill/SB179/2026
+NM,2100640,,Detention Center Strip Searches,Detention Center Strip Searches,1,2026-01-28,https://legiscan.com/NM/bill/SB180/2026
+NM,2100319,,Support & Training For Various Alerts,Support & Training For Various Alerts,1,2026-01-28,https://legiscan.com/NM/bill/SB181/2026
+NM,2100500,,Dyed Diesel Grt Deduction,Dyed Diesel Grt Deduction,1,2026-01-28,https://legiscan.com/NM/bill/SB182/2026
+NM,2100522,,Study Creating Regional Urgent Care,Study Creating Regional Urgent Care,1,2026-01-28,https://legiscan.com/NM/bill/SB183/2026
+NM,2101983,,Children's Behavioral Health Division,Children's Behavioral Health Division,1,2026-01-29,https://legiscan.com/NM/bill/SB184/2026
+NM,2102011,,Increase Gasoline Tax,Increase Gasoline Tax,1,2026-01-29,https://legiscan.com/NM/bill/SB185/2026
+NM,2102120,,No Use Of Snap For Soft Drinks & Candy,No Use Of Snap For Soft Drinks & Candy,1,2026-01-29,https://legiscan.com/NM/bill/SB186/2026
+NM,2102185,,Nmfa Water Project Fund,Nmfa Water Project Fund,1,2026-01-29,https://legiscan.com/NM/bill/SB187/2026
+NM,2102135,,Paid Parental Leave For School Employees,Paid Parental Leave For School Employees,1,2026-01-29,https://legiscan.com/NM/bill/SB188/2026
+NM,2102105,,Reproductive Health Care Coverage,Reproductive Health Care Coverage,1,2026-01-29,https://legiscan.com/NM/bill/SB189/2026
+NM,2102056,,Gila Regional Cancer Center Bonds,Gila Regional Cancer Center Bonds,1,2026-01-29,https://legiscan.com/NM/bill/SB190/2026
+NM,2102073,,Seizure Safe Schools Act,Seizure Safe Schools Act,1,2026-01-29,https://legiscan.com/NM/bill/SB191/2026
+NM,2101993,,Data Broker Privacy Act,Data Broker Privacy Act,1,2026-01-29,https://legiscan.com/NM/bill/SB192/2026
+NM,2103164,,Acequia & Ditch Infrastructure Fund Transfer,Acequia & Ditch Infrastructure Fund Transfer,4,2026-03-09,https://legiscan.com/NM/bill/SB193/2026
+NM,2103250,,Luna College Baseball Field,Luna College Baseball Field,1,2026-01-30,https://legiscan.com/NM/bill/SB194/2026
+NM,2103174,,Soil & Water District Training & Outreach,Soil & Water District Training & Outreach,1,2026-01-30,https://legiscan.com/NM/bill/SB195/2026
+NM,2103122,,Las Vegas Animal Care Center Programs,Las Vegas Animal Care Center Programs,1,2026-01-30,https://legiscan.com/NM/bill/SB196/2026
+NM,2103212,,Raton Animal Shelter Services,Raton Animal Shelter Services,1,2026-01-30,https://legiscan.com/NM/bill/SB197/2026
+NM,2103099,,Las Vegas Endangered Species Hatchery,Las Vegas Endangered Species Hatchery,1,2026-01-30,https://legiscan.com/NM/bill/SB198/2026
+NM,2103150,,Fund Disbursements For Educational Radio,Fund Disbursements For Educational Radio,1,2026-01-30,https://legiscan.com/NM/bill/SB199/2026
+NM,2103198,,Kanw Educational Radio Station,Kanw Educational Radio Station,1,2026-01-30,https://legiscan.com/NM/bill/SB200/2026
+NM,2103136,,Rural Libraries,Rural Libraries,1,2026-01-30,https://legiscan.com/NM/bill/SB201/2026
+NM,2103127,,Physician Graduate Ed. Trust Fund,Physician Graduate Ed. Trust Fund,1,2026-01-30,https://legiscan.com/NM/bill/SB202/2026
+NM,2103189,,Northern Nm State School Documentary,Northern Nm State School Documentary,1,2026-01-30,https://legiscan.com/NM/bill/SB203/2026
+NM,2103259,,Funding For Terminated Research Projects,Funding For Terminated Research Projects,1,2026-01-30,https://legiscan.com/NM/bill/SB204/2026
+NM,2103226,,Toxicology Reimbursement Requirements,Toxicology Reimbursement Requirements,1,2026-01-30,https://legiscan.com/NM/bill/SB205/2026
+NM,2103113,,Relinquishment Of Infants At Safe Haven Boxes,Relinquishment Of Infants At Safe Haven Boxes,1,2026-01-30,https://legiscan.com/NM/bill/SB206/2026
+NM,2104293,,Flashing Red Lights On Recovery & Repair Cars,Flashing Red Lights On Recovery & Repair Cars,1,2026-02-02,https://legiscan.com/NM/bill/SB207/2026
+NM,2104282,,Welcome Child Act & Fund,Welcome Child Act & Fund,1,2026-02-02,https://legiscan.com/NM/bill/SB208/2026
+NM,2103837,,Financial Assurance For Renewable Energy,Financial Assurance For Renewable Energy,1,2026-02-02,https://legiscan.com/NM/bill/SB209/2026
+NM,2104175,,Nm Highlands Sports Fields,Nm Highlands Sports Fields,1,2026-02-02,https://legiscan.com/NM/bill/SB210/2026
+NM,2104118,,Las Vegas Rodriguez Park,Las Vegas Rodriguez Park,1,2026-02-02,https://legiscan.com/NM/bill/SB211/2026
+NM,2103872,,Ski Area Equipment Sale Gross Receipts,Ski Area Equipment Sale Gross Receipts,1,2026-02-02,https://legiscan.com/NM/bill/SB212/2026
+NM,2103814,,"Index Gas, Weight & Special Fuels Taxes","Index Gas, Weight & Special Fuels Taxes",1,2026-02-02,https://legiscan.com/NM/bill/SB213/2026
+NM,2103883,,Penalty For Certain Misdemeanors,Penalty For Certain Misdemeanors,1,2026-02-02,https://legiscan.com/NM/bill/SB214/2026
+NM,2103919,,Loaned Program Money In Disaster Fund,Loaned Program Money In Disaster Fund,1,2026-02-02,https://legiscan.com/NM/bill/SB215/2026
+NM,2104141,,Certificate For Native American Languages,Certificate For Native American Languages,1,2026-02-02,https://legiscan.com/NM/bill/SB216/2026
+NM,2103769,,Liquor Tax Changes,Liquor Tax Changes,1,2026-02-02,https://legiscan.com/NM/bill/SB217/2026
+NM,2104271,,Los Alamos Emergency Operations Center,Los Alamos Emergency Operations Center,1,2026-02-02,https://legiscan.com/NM/bill/SB218/2026
+NM,2106752,,Native American Ombud Act,Native American Ombud Act,1,2026-02-03,https://legiscan.com/NM/bill/SB219/2026
+NM,2106805,,Personal Care Service Medicaid Reimbursement,Personal Care Service Medicaid Reimbursement,1,2026-02-03,https://legiscan.com/NM/bill/SB220/2026
+NM,2106799,,Crime Of Misappropriation Of Oil & Gas Equip.,Crime Of Misappropriation Of Oil & Gas Equip.,1,2026-02-03,https://legiscan.com/NM/bill/SB221/2026
+NM,2106698,,Physician Residency Programs,Physician Residency Programs,1,2026-02-03,https://legiscan.com/NM/bill/SB222/2026
+NM,2106671,,Surveillance-based Price Discrimination Act,Surveillance-based Price Discrimination Act,1,2026-02-03,https://legiscan.com/NM/bill/SB223/2026
+NM,2106631,,Insurance Fair Plan Act Changes,Insurance Fair Plan Act Changes,1,2026-02-03,https://legiscan.com/NM/bill/SB224/2026
+NM,2106738,,Tribal Liaison Program,Tribal Liaison Program,1,2026-02-03,https://legiscan.com/NM/bill/SB225/2026
+NM,2106819,,Uranium Mine Cleanup,Uranium Mine Cleanup,1,2026-02-03,https://legiscan.com/NM/bill/SB226/2026
+NM,2106684,,Cruelty To Animals Registry,Cruelty To Animals Registry,1,2026-02-03,https://legiscan.com/NM/bill/SB227/2026
+NM,2106651,,General Appropriation Act Of 2026,General Appropriation Act Of 2026,1,2026-02-03,https://legiscan.com/NM/bill/SB228/2026
+NM,2106691,,Allow Auricular Acupuncture,Allow Auricular Acupuncture,1,2026-02-03,https://legiscan.com/NM/bill/SB229/2026
+NM,2106704,,Nm Historic Women Marker Program,Nm Historic Women Marker Program,1,2026-02-03,https://legiscan.com/NM/bill/SB230/2026
+NM,2106657,,Study Community-based Foster Care,Study Community-based Foster Care,1,2026-02-03,https://legiscan.com/NM/bill/SB231/2026
+NM,2106643,,Determine Competency Of A Child,Determine Competency Of A Child,1,2026-02-03,https://legiscan.com/NM/bill/SB232/2026
+NM,2106718,,High-impact Tutoring For Some Students,High-impact Tutoring For Some Students,1,2026-02-03,https://legiscan.com/NM/bill/SB233/2026
+NM,2106724,,Foster Child School Transportation,Foster Child School Transportation,1,2026-02-03,https://legiscan.com/NM/bill/SB234/2026
+NM,2106825,,Microgrid Oversight Act,Microgrid Oversight Act,2,2026-02-14,https://legiscan.com/NM/bill/SB235/2026
+NM,2106765,,Cyfd Abuse & Neglect Case Tort Claims,Cyfd Abuse & Neglect Case Tort Claims,1,2026-02-03,https://legiscan.com/NM/bill/SB236/2026
+NM,2106625,,Cyfd Critical Incident Investigation Team,Cyfd Critical Incident Investigation Team,1,2026-02-03,https://legiscan.com/NM/bill/SB237/2026
+NM,2106785,,Rename Governor's Residence Advisory Comm.,Rename Governor's Residence Advisory Comm.,1,2026-02-03,https://legiscan.com/NM/bill/SB238/2026
+NM,2106732,,Controlled Substance Continuing Sentencing,Controlled Substance Continuing Sentencing,1,2026-02-03,https://legiscan.com/NM/bill/SB239/2026
+NM,2106758,,Capital Outlay Projects,Capital Outlay Projects,4,2026-03-11,https://legiscan.com/NM/bill/SB240/2026
+NM,2106678,,Child Care Assistance Program Act,Child Care Assistance Program Act,4,2026-03-10,https://legiscan.com/NM/bill/SB241/2026
+NM,2106745,,Indian Family Protection Act Compliance,Indian Family Protection Act Compliance,1,2026-02-03,https://legiscan.com/NM/bill/SB242/2026
+NM,2106711,,Nmsu Student Activities,Nmsu Student Activities,1,2026-02-03,https://legiscan.com/NM/bill/SB243/2026
+NM,2106637,,Unm Student Athletes Funding,Unm Student Athletes Funding,1,2026-02-03,https://legiscan.com/NM/bill/SB244/2026
+NM,2106793,,Indecent Exposure To Child Out Of Public View,Indecent Exposure To Child Out Of Public View,1,2026-02-03,https://legiscan.com/NM/bill/SB245/2026
+NM,2106772,,Massage Therapy Practice Changes,Massage Therapy Practice Changes,2,2026-02-17,https://legiscan.com/NM/bill/SB246/2026
+NM,2106663,,Nm Medical Review Commission Report,Nm Medical Review Commission Report,1,2026-02-03,https://legiscan.com/NM/bill/SB247/2026
+NM,2106778,,Indian Affairs Commission,Indian Affairs Commission,1,2026-02-03,https://legiscan.com/NM/bill/SB248/2026
+NM,2106813,,Missing & Murdered Indigenous Peoples,Missing & Murdered Indigenous Peoples,1,2026-02-03,https://legiscan.com/NM/bill/SB249/2026
+NM,2108068,,Ignition Interlock For Revoked License,Ignition Interlock For Revoked License,1,2026-02-04,https://legiscan.com/NM/bill/SB250/2026
+NM,2108140,,Horse Racing Program Training & Ownership,Horse Racing Program Training & Ownership,1,2026-02-04,https://legiscan.com/NM/bill/SB251/2026
+NM,2108172,,Liquor Tax Changes,Liquor Tax Changes,1,2026-02-04,https://legiscan.com/NM/bill/SB252/2026
+NM,2108069,,Prohibit Certain Agency Rules,Prohibit Certain Agency Rules,1,2026-02-04,https://legiscan.com/NM/bill/SB253/2026
+NM,2108237,,Trunked Radio Subscriber Fees,Trunked Radio Subscriber Fees,1,2026-02-04,https://legiscan.com/NM/bill/SB254/2026
+NM,2108212,,Fentanyl Trafficking As Murder,Fentanyl Trafficking As Murder,1,2026-02-04,https://legiscan.com/NM/bill/SB255/2026
+NM,2108132,,Unlawful Interference With Aircraft,Unlawful Interference With Aircraft,1,2026-02-04,https://legiscan.com/NM/bill/SB256/2026
+NM,2108248,,Nmed Prioritize Hazardous Waste,Nmed Prioritize Hazardous Waste,1,2026-02-04,https://legiscan.com/NM/bill/SB257/2026
+NM,2108232,,Fiscal Impact Reports For Rules,Fiscal Impact Reports For Rules,1,2026-02-04,https://legiscan.com/NM/bill/SB258/2026
+NM,2108148,,Create New Threats Against Law Enforcement,Create New Threats Against Law Enforcement,1,2026-02-04,https://legiscan.com/NM/bill/SB259/2026
+NM,2108271,,Workforce Education Tax Credit,Workforce Education Tax Credit,1,2026-02-04,https://legiscan.com/NM/bill/SB260/2026
+NM,2108257,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - Possession Of Firearm At Polling Place",2,2026-02-15,https://legiscan.com/NM/bill/SB261/2026
+NM,2108208,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB262/2026
+NM,2108233,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB263/2026
+NM,2108161,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - Election Rights & Troops At Elections",4,2026-03-09,https://legiscan.com/NM/bill/SB264/2026
+NM,2108219,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB265/2026
+NM,2108142,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB266/2026
+NM,2108222,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB267/2026
+NM,2108155,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB268/2026
+NM,2108231,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB269/2026
+NM,2108126,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB270/2026
+NM,2108130,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB271/2026
+NM,2108169,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB272/2026
+NM,2108138,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - Correction Faciliity Loss Of Revenue",4,2026-03-11,https://legiscan.com/NM/bill/SB273/2026
+NM,2108168,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - State Agency Appropriations",2,2026-02-18,https://legiscan.com/NM/bill/SB274/2026
+NM,2108094,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB275/2026
+NM,2108039,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB276/2026
+NM,2108263,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB277/2026
+NM,2108078,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB278/2026
+NM,2108112,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB279/2026
+NM,2108049,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB280/2026
+NM,2108046,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB281/2026
+NM,2108272,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB282/2026
+NM,2108119,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare - Metro Redevelopment Code Changes",1,2026-02-04,https://legiscan.com/NM/bill/SB283/2026
+NM,2108164,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB284/2026
+NM,2108085,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB285/2026
+NM,2108143,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB286/2026
+NM,2108213,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB287/2026
+NM,2108088,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB288/2026
+NM,2108179,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB289/2026
+NM,2108053,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB290/2026
+NM,2108204,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB291/2026
+NM,2108054,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB292/2026
+NM,2108167,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB293/2026
+NM,2108247,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB294/2026
+NM,2108188,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB295/2026
+NM,2108226,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB296/2026
+NM,2108228,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB297/2026
+NM,2108207,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB298/2026
+NM,2108055,,"Public Peace, Health, Safety & Welfare","Public Peace, Health, Safety & Welfare",1,2026-02-04,https://legiscan.com/NM/bill/SB299/2026
+NM,2108152,,Cyfd Computer Hardware & Software,Cyfd Computer Hardware & Software,1,2026-02-04,https://legiscan.com/NM/bill/SB300/2026
+NM,2108150,,Foster Parent Caring For Indian Child Support,Foster Parent Caring For Indian Child Support,1,2026-02-04,https://legiscan.com/NM/bill/SB301/2026
+NM,2108123,,Children's Code Proceeding Filing Fees,Children's Code Proceeding Filing Fees,1,2026-02-04,https://legiscan.com/NM/bill/SB302/2026
+NM,2108175,,Use Of Funds For Concealed Id Law Enforcement,Use Of Funds For Concealed Id Law Enforcement,1,2026-02-04,https://legiscan.com/NM/bill/SB303/2026
+NM,2108108,,Nm Next Generation Act & Funds,Nm Next Generation Act & Funds,1,2026-02-04,https://legiscan.com/NM/bill/SB304/2026
+NM,2108104,,Juvenile Corrections Fund Uses,Juvenile Corrections Fund Uses,1,2026-02-04,https://legiscan.com/NM/bill/SB305/2026
+NM,2108084,,Higher Ed Regional Distinction,Higher Ed Regional Distinction,2,2026-02-14,https://legiscan.com/NM/bill/SB306/2026
+NM,2108195,,Higher Ed Regent Decisions About Tenure,Higher Ed Regent Decisions About Tenure,1,2026-02-04,https://legiscan.com/NM/bill/SB307/2026
+NM,2108192,,Utility & Energy Changes,Utility & Energy Changes,1,2026-02-04,https://legiscan.com/NM/bill/SB308/2026
+NM,2108174,,Lottery Deposits Into Tuition Fund,Lottery Deposits Into Tuition Fund,1,2026-02-04,https://legiscan.com/NM/bill/SB309/2026
+NM,2108037,,Mora Water & Sewage Improvements,Mora Water & Sewage Improvements,1,2026-02-04,https://legiscan.com/NM/bill/SB310/2026
+NM,2108268,,Crimes Against School Employees,Crimes Against School Employees,1,2026-02-04,https://legiscan.com/NM/bill/SB311/2026
+NM,2108133,,Safety Helmets As Negligence,Safety Helmets As Negligence,1,2026-02-04,https://legiscan.com/NM/bill/SB312/2026
+NM,2108216,,Child Car Seat Fastening As Negligence,Child Car Seat Fastening As Negligence,1,2026-02-04,https://legiscan.com/NM/bill/SB313/2026
+NM,2092615,,Consumption Of Alcohol,Consumption Of Alcohol,1,2026-01-23,https://legiscan.com/NM/bill/SR1/2026
+NM,2091340,,"School Election Timing, Ca","School Election Timing, Ca",4,2026-02-18,https://legiscan.com/NM/bill/SJR1/2026
+NM,2091385,,"Legislative Term Limits & Salaries, Ca","Legislative Term Limits & Salaries, Ca",1,2026-01-22,https://legiscan.com/NM/bill/SJR2/2026
+NM,2094972,,"Appointed State Board Of Education, Ca","Appointed State Board Of Education, Ca",1,2026-01-27,https://legiscan.com/NM/bill/SJR3/2026
+NM,2100603,,"Session Length & Bill Consideration, Ca","Session Length & Bill Consideration, Ca",1,2026-01-28,https://legiscan.com/NM/bill/SJR4/2026
+NM,2102178,,"Nonresidential Property Valuation, Ca","Nonresidential Property Valuation, Ca",1,2026-01-29,https://legiscan.com/NM/bill/SJR5/2026
+NM,2103898,,"Denial Of Bail, Ca","Denial Of Bail, Ca",1,2026-02-02,https://legiscan.com/NM/bill/SJR6/2026
+NM,2114687,,Santa Fe Property Exchange,Santa Fe Property Exchange,4,2026-02-18,https://legiscan.com/NM/bill/SJR7/2026
+NM,2091305,,Uniform Redistricting Criteria,Uniform Redistricting Criteria,1,2026-01-22,https://legiscan.com/NM/bill/SM1/2026
+NM,2091388,,Pediatric Palliative Care Medicaid Benefit,Pediatric Palliative Care Medicaid Benefit,4,2026-02-09,https://legiscan.com/NM/bill/SM2/2026
+NM,2092454,,State Agency Insect Workshop,State Agency Insect Workshop,4,2026-02-14,https://legiscan.com/NM/bill/SM3/2026
+NM,2092581,,Promote Nuclear Disarmament,Promote Nuclear Disarmament,1,2026-01-23,https://legiscan.com/NM/bill/SM4/2026
+NM,2092516,,"""better Hearing & Speech Month""","""better Hearing & Speech Month""",1,2026-01-23,https://legiscan.com/NM/bill/SM5/2026
+NM,2092574,,Name Roswell Bypass For Nancy Lopez,Name Roswell Bypass For Nancy Lopez,4,2026-02-14,https://legiscan.com/NM/bill/SM6/2026
+NM,2093856,,Redistricting Task Force,Redistricting Task Force,1,2026-01-26,https://legiscan.com/NM/bill/SM7/2026
+NM,2093663,,Honoring Law Enforcement Officers,Honoring Law Enforcement Officers,1,2026-01-26,https://legiscan.com/NM/bill/SM8/2026
+NM,2093674,,Study State Purchase Of Utilities,Study State Purchase Of Utilities,1,2026-01-26,https://legiscan.com/NM/bill/SM9/2026
+NM,2094952,,Study Low-income House Solar Devices,Study Low-income House Solar Devices,1,2026-01-27,https://legiscan.com/NM/bill/SM10/2026
+NM,2094794,,Importance Of Water To Taos,Importance Of Water To Taos,1,2026-01-27,https://legiscan.com/NM/bill/SM11/2026
+NM,2100779,,Location To Commemorate Andres Arellanes,Location To Commemorate Andres Arellanes,1,2026-01-28,https://legiscan.com/NM/bill/SM12/2026
+NM,2102051,,Study Restructuring Las Vegas Land Grant,Study Restructuring Las Vegas Land Grant,1,2026-01-29,https://legiscan.com/NM/bill/SM13/2026
+NM,2102251,,Address Forced Sterilization Policy,Address Forced Sterilization Policy,4,2026-02-16,https://legiscan.com/NM/bill/SM14/2026
+NM,2103117,,Medical Malpractice Task Force,Medical Malpractice Task Force,1,2026-01-30,https://legiscan.com/NM/bill/SM15/2026
+NM,2103169,,Data On Parenting Students In Higher Ed.,Data On Parenting Students In Higher Ed.,4,2026-02-14,https://legiscan.com/NM/bill/SM16/2026
+NM,2104049,,Sexual Assault Exam Kit Task Force,Sexual Assault Exam Kit Task Force,4,2026-02-17,https://legiscan.com/NM/bill/SM17/2026
+NM,2108107,,Study Minimum Wage & Capital Outlay,Study Minimum Wage & Capital Outlay,1,2026-02-04,https://legiscan.com/NM/bill/SM18/2026
+NM,2108043,,Study Indian Child Welfare Laws,Study Indian Child Welfare Laws,1,2026-02-04,https://legiscan.com/NM/bill/SM19/2026
+NM,2108203,,Statewide Youth Violence Summit,Statewide Youth Violence Summit,4,2026-02-18,https://legiscan.com/NM/bill/SM20/2026
+NM,2108253,,Study Overdose Prevention Centers,Study Overdose Prevention Centers,4,2026-02-18,https://legiscan.com/NM/bill/SM21/2026
+NM,2109674,,Study Cyfd Funds & Domestic Violence,Study Cyfd Funds & Domestic Violence,4,2026-02-18,https://legiscan.com/NM/bill/SM22/2026
+NM,2111578,,Funding For Wreaths On Veteran Gravesites,Funding For Wreaths On Veteran Gravesites,1,2026-02-07,https://legiscan.com/NM/bill/SM23/2026
+NM,2112011,,Location For Roberto Mondragon Memorial,Location For Roberto Mondragon Memorial,1,2026-02-09,https://legiscan.com/NM/bill/SM24/2026
+NM,2112092,,Study Nm Dahl Heritage Sheep,Study Nm Dahl Heritage Sheep,1,2026-02-09,https://legiscan.com/NM/bill/SM25/2026
+NM,2113582,,Utilities In Regional Transmission Orgs.,Utilities In Regional Transmission Orgs.,1,2026-02-10,https://legiscan.com/NM/bill/SM26/2026
+NM,2114622,,Impact Of Radiation Exposure,Impact Of Radiation Exposure,4,2026-02-18,https://legiscan.com/NM/bill/SM27/2026
+NM,2116157,,Study Gun Violence,Study Gun Violence,1,2026-02-12,https://legiscan.com/NM/bill/SM28/2026
+NM,2115985,,Health Care Barriers & Gaps,Health Care Barriers & Gaps,1,2026-02-12,https://legiscan.com/NM/bill/SM29/2026
+NM,2115898,,Study Highway 491 Problems,Study Highway 491 Problems,1,2026-02-12,https://legiscan.com/NM/bill/SM30/2026
+NM,2117078,,Pera Work Group,Pera Work Group,4,2026-02-17,https://legiscan.com/NM/bill/SM31/2026
+NM,2117055,,Foster Care Students Transportation Barriers,Foster Care Students Transportation Barriers,1,2026-02-13,https://legiscan.com/NM/bill/SM32/2026
+NM,2091324,,Uniform Redistricting Criteria,Uniform Redistricting Criteria,1,2026-01-22,https://legiscan.com/NM/bill/SJM1/2026
+NM,2104105,,Responsibility For Federal Ed. Programs,Responsibility For Federal Ed. Programs,1,2026-02-02,https://legiscan.com/NM/bill/SJM2/2026
+NM,2108099,,Designate Highway Memorial Corridors,Designate Highway Memorial Corridors,1,2026-02-04,https://legiscan.com/NM/bill/SJM3/2026
+NM,2112171,,Advance Election For Federal Tax Program,Advance Election For Federal Tax Program,1,2026-02-09,https://legiscan.com/NM/bill/SJM4/2026
